@@ -4,7 +4,8 @@ import { Post, Shelf, Taleon, Thread, User } from "@model";
 import { StrictModel } from "@type/mongoose";
 import { NextResponse } from "next/server";
 
-export const dynamic = "force-static";
+// Cache it for a week;
+export const revalidate = 604800;
 
 const getUrlsForSitemap = async (collection: "users" | "posts" | "shelves" | "threads" | "taleons"): Promise<string[]> => {
 

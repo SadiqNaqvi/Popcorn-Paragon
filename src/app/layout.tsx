@@ -17,6 +17,7 @@ import { PropsWithChildren, Suspense } from "react";
 import { Toaster } from "sonner";
 import UserHydrator from "./UserHydrator";
 import localFont from 'next/font/local'
+import { generateJsonLdForRoot } from "@lib/seo/jsonld";
 
 const montserratFont = localFont({
   src: "./fonts/Montserrat.ttf",
@@ -77,6 +78,16 @@ const RootLayout = async ({ children }: PropsWithChildren) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${robotoFont.variable} ${montserratFont.variable} antialiased`}>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={
+            {
+              __html: JSON.stringify(generateJsonLdForRoot()).replace(/</g, '\\u003c'),
+            }
+          }
+        />
+
         <Toaster swipeDirections={["bottom", "left", "right"]} />
         <ReactQueryProvider>
           <ThemeProvider enableSystem defaultTheme="system" attribute={"class"}>

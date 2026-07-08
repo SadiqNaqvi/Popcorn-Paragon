@@ -2,15 +2,15 @@ import { app_production_url } from "@lib/constants";
 import { getPoster } from "@lib/utils";
 import { RefinedCollectionData, RefinedMovieData, RefinedPersonData, RefinedShowData } from "@type/external";
 import { FullComment, FullPost, FullShelf, RequestedUser, ShelfItemType, Thread } from "@type/internal";
-import { description, name } from "./metadata";
+import { description, name, title } from "./metadata";
 
 export const generateJsonLdForRoot = () => ({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": name,
     "url": app_production_url,
-    "logo": `${app_production_url}/apple-touch-icon.png`,
-    "description": description
+    "description": description,
+    "alternateName": title,
 });
 
 export const generateJsonLdForMovie = ({
