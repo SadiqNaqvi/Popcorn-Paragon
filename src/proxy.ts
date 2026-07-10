@@ -129,5 +129,14 @@ export const proxy = async (req: NextRequest) => {
 };
 
 export const config = {
-  matcher: ["/((?!_next|api\/v1\/ably|sitemap.xml|sitemaps\/*|robots.txt|.*\\..*).*)"]
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - _next (static files & image optimization files)
+     * - ably auth route
+     * - favicon.ico, sitemap.xml, robots.txt (metadata files)
+     */
+    // "/((?!_next|api\/v1\/ably|sitemap.xml|sitemaps\/*|robots.txt|.*\\..*).*)",
+    "/((?!_next|api\/v1\/ably|robots\\.txt|.*\\.xml|sitemap\\.xml|sitemaps(?:/.*)?|.*\\..*).*)"
+  ]
 };

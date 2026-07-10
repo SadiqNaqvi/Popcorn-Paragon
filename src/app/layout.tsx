@@ -29,7 +29,7 @@ const robotoFont = localFont({
   variable: "--font-roboto"
 });
 
-export const metadata = generateDynamicMetadata({}, true);
+export const metadata = generateDynamicMetadata({ allowRobots: true }, true);
 
 export const viewport = appViewport;
 

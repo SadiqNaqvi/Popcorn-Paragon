@@ -5,7 +5,8 @@ import { StrictModel } from "@type/mongoose";
 import { NextResponse } from "next/server";
 
 // Cache it for a week;
-export const revalidate = 604800;
+// export const revalidate = 604800;
+export const dynamic = "force-dynamic";
 
 const getUrlsForSitemap = async (collection: "users" | "posts" | "shelves" | "threads" | "taleons"): Promise<string[]> => {
 
@@ -66,7 +67,6 @@ export const GET = async () => {
   return new NextResponse(sitemapIndexXML, {
     headers: {
       "Content-Type": "application/xml",
-      "Content-Length": Buffer.byteLength(sitemapIndexXML).toString(),
     },
   });
 }

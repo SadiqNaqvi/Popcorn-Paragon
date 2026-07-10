@@ -1,6 +1,13 @@
 import { app_production_url } from "@lib/constants";
 import { MetadataRoute } from "next";
 
+const escapeXml = (str: string) => str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+
 const buildSitemaps = (sitemaps: MetadataRoute.Sitemap) => {
 
     let xml = '<?xml version="1.0" encoding="UTF-8"?>';
@@ -8,7 +15,7 @@ const buildSitemaps = (sitemaps: MetadataRoute.Sitemap) => {
 
     for (const sitemap of sitemaps) {
         xml += "<url>";
-        xml += `<loc>${sitemap.url}</loc>`;
+        xml += `<loc>${escapeXml(sitemap.url)}</loc>`;
 
         if (sitemap.lastModified)
             xml += `<lastmod>${sitemap.lastModified}</lastmod>`;
@@ -16,6 +23,8 @@ const buildSitemaps = (sitemaps: MetadataRoute.Sitemap) => {
             xml += `<priority>${sitemap.priority}</priority>`;
         if (sitemap.changeFrequency)
             xml += `<changefreq>${sitemap.changeFrequency}</changefreq>`;
+        if (sitemap.lastModified)
+            xml += `<lastmod>${sitemap.lastModified}</lastmod>`;
         xml += "</url>";
     }
 
@@ -25,7 +34,8 @@ const buildSitemaps = (sitemaps: MetadataRoute.Sitemap) => {
 }
 
 // Cache it for a week;
-export const revalidate = 604800;
+// export const revalidate = 604800;
+export const dynamic = "force-dynamic";
 
 export const GET = () => {
 
@@ -83,7 +93,6 @@ export const GET = () => {
     return new Response(sitemaps, {
         headers: {
             "Content-Type": "application/xml",
-            "Content-Length": Buffer.byteLength(sitemaps).toString(),
         },
     });
 
