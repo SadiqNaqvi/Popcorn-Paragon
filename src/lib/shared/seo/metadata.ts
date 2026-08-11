@@ -21,6 +21,15 @@ const robotsMeta: Metadata["robots"] = {
     },
 };
 
+const robotsNotAllowed: Metadata["robots"] = {
+    index: false,
+    follow: false,
+    googleBot: {
+        index: false,
+        follow: false
+    },
+};
+
 const ogImage = {
     url: ogImagePath,
     width: 1200,
@@ -135,7 +144,7 @@ const generateDynamicMetadata = (config: Partial<ParloMetadata>, root?: boolean)
             title: "Parlocula",
         },
 
-        robots: config.allowRobots ? robotsMeta : undefined,
+        robots: config.allowRobots ? robotsMeta : robotsNotAllowed,
 
         alternates: { canonical },
 
@@ -181,7 +190,7 @@ const generateDynamicMetadata = (config: Partial<ParloMetadata>, root?: boolean)
         verification: {
             google: "X7wLjElVSSkEDTG5XIb7-u1ZTenE_gW4wuqn4rlHEJI",
             other: {
-                "msvalidate.01":"AE31728D793BC151F732BB2746ED0A34"
+                "msvalidate.01": "AE31728D793BC151F732BB2746ED0A34"
             }
         }
     };
