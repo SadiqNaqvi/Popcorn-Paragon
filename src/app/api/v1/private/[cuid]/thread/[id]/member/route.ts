@@ -3,7 +3,7 @@ import {
   getHandler,
   postHandler,
   updateHandler,
-} from "@lib/helpers/handlers";
+} from "@lib/backend/helpers/handlers";
 import { Member, Thread, User } from "@model";
 
 // Fetch the member status of the current user in a thread.

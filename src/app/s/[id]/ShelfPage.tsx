@@ -2,8 +2,8 @@
 
 import { FilterTiles, GenericWrapper, InfiniteScroller, Navigate, ObserverHeader } from "@components";
 import { MetadataTile, MetadataTileContainer, ShelfItemBar, ShelfPoster } from "@components/ui";
-import { getItems, getShelf } from "@lib/helpers/common";
-import { getQueryKeys, timeAgo } from "@lib/utils";
+import { getItems, getShelf } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys, timeAgo } from "@lib/shared/utils";
 import { FullShelf } from "@type/internal";
 import ActionButton from "./ActionButton";
 import EllipsisButton from "./Ellipsis";

@@ -1,10 +1,10 @@
 import LoginModal from "@components/fallbacks/LoginModal";
 import { NotFound, ShowError } from "@components/fallbacks";
 import { FullPageLoadingSpinner } from "@components/ui/loading/LoadingSpinner";
-import { getUserFromToken } from "@lib/auth/utils";
-import { getThreadById } from "@lib/helpers/common";
-import { fetchQuery, getQueryClient } from "@lib/providers/queryClient";
-import { getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { getThreadById } from "@lib/shared/helpers/internal_fetchers";
+import { fetchQuery, getQueryClient } from "@lib/backend/providers/queryClient";
+import { getQueryKeys } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { ParloPageProps } from "@type/other";
 import { cookies } from "next/headers";

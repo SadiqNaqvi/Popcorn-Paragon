@@ -1,7 +1,7 @@
 import { ConnectionModelType } from "@type/models";
 import type { StrictModel } from "@type/mongoose";
 import { model, models, StrictSchema } from "@type/mongoose";
-import { parloId } from "@lib/utils";
+import { parloId } from "@lib/shared/utils";
 
 const connectionModel = new StrictSchema<ConnectionModelType>({
   _id: { type: String, default: () => parloId(21) },

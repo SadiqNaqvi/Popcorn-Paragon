@@ -1,6 +1,6 @@
-import { deleteSession } from "@lib/auth/session";
-import { updateHandler } from "@lib/helpers/handlers";
-import { sessionInvalidationSchema } from "@lib/schemas";
+import { deleteSession } from "@lib/backend/auth/session";
+import { updateHandler } from "@lib/backend/helpers/handlers";
+import { sessionInvalidationSchema } from "@lib/shared/validation/schemas";
 import { User } from "@model";
 import { SessionInvalidationServerSchemaType } from "@type/schemas";
 import bcrypt from "bcryptjs";

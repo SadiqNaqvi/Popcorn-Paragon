@@ -1,11 +1,11 @@
 import JsonLd from "@components/JsonLd";
-import { getUserFromToken } from "@lib/auth/utils";
-import { fetchMovie } from "@lib/contentFetcher";
-import { getAllShelvesOfUser, getShelvesForTaleon } from "@lib/helpers/common";
-import { getQueryClient, prefetchInfiniteQuery, prefetchQuery } from "@lib/providers/queryClient";
-import { generateJsonLdForMovie } from "@lib/seo/jsonld";
-import generateDynamicMetadata from "@lib/seo/metadata";
-import { getPoster, getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { fetchMovie } from "@lib/shared/helpers/external_fetchers";
+import { getAllShelvesOfUser, getShelvesForTaleon } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryClient, prefetchInfiniteQuery, prefetchQuery } from "@lib/backend/providers/queryClient";
+import { generateJsonLdForMovie } from "@lib/shared/seo/jsonld";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
+import { getPoster, getQueryKeys } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { ParloPageProps } from "@type/other";
 import { Metadata } from "next";
@@ -22,7 +22,7 @@ export const generateMetadata = async ({ params }: ParloPageProps): Promise<Meta
 
     return generateDynamicMetadata({
         title,
-        allowRobots: true,
+        allowRobots: false,
         description: `${overview} - View cast, crew, ratings, reviews, related communities, thread, shelves, and discussions on Parlocula.`,
         coverImage: backdrop ? getPoster({ path: backdrop, external: true, type: "backdrop", size: "w1280" }) : undefined,
         url: `/explore/movie/${id}`,

@@ -1,4 +1,4 @@
-import { makeUrlSafe } from "@lib/utils";
+import { makeUrlSafe } from "@lib/shared/utils";
 import { RefinedSearchData } from "@type/external";
 import { twMerge } from "tailwind-merge";
 import Navigate from "../Navigate";

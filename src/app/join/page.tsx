@@ -3,8 +3,8 @@
 import Register from "@app/join/Register";
 import { Navigate } from "@components";
 import EmailVerifier from "@components/auth/EmailVerifier";
-import { urlPattern } from "@lib/constants";
-import { loginUserMutation } from "@lib/helpers/mutations";
+import { urlPattern } from "@lib/shared/constants";
+import { loginUserMutation } from "@lib/frontend/helpers/mutations";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 

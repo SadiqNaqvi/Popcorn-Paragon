@@ -1,8 +1,8 @@
 import LoginModal from "@components/fallbacks/LoginModal";
-import { getUserFromToken } from "@lib/auth/utils";
-import { getSavedContent } from "@lib/helpers/common";
-import { getQueryClient, prefetchInfiniteQuery } from "@lib/providers/queryClient";
-import { getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { getSavedContent } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryClient, prefetchInfiniteQuery } from "@lib/backend/providers/queryClient";
+import { getQueryKeys } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { Metadata } from "next";
 import { cookies } from "next/headers";

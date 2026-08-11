@@ -2,10 +2,10 @@
 
 import { EditIcon } from "@assets/Icons";
 import { Navigate, SaveButton } from "@components";
-import { getShelfConnection } from "@lib/helpers/common";
-import { acceptCollaboratorInvitation, rejectCollaboratorInvitation } from "@lib/helpers/mutations";
-import { useQueryHook } from "@lib/hooks";
-import { getQueryKeys } from "@lib/utils";
+import { getShelfConnection } from "@lib/shared/helpers/internal_fetchers";
+import { acceptCollaboratorInvitation, rejectCollaboratorInvitation } from "@lib/frontend/helpers/mutations";
+import { useQueryHook } from "@lib/frontend/hooks";
+import { getQueryKeys } from "@lib/shared/utils";
 import { AllShelves } from "@type/models";
 import AddItemsButton from "./AddItemsButton";
 import { Button } from "@components/ui";

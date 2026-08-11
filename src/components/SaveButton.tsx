@@ -2,8 +2,8 @@
 
 import { BookmarkFillIcon, BookmarkIcon } from "@assets/Icons";
 import { UserBasedButton } from "@components";
-import { checkIfItemSaved } from "@lib/helpers/common";
-import { getQueryKeys, numberConverter } from "@lib/utils";
+import { checkIfItemSaved } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys, numberConverter } from "@lib/shared/utils";
 import { LoadingButton, UserBasedButtonProps } from "./UserBasedButton";
 import { Button, OptionalChildren } from "./ui";
 

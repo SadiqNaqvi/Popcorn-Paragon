@@ -1,8 +1,8 @@
-import { getSession, storeSession } from "@lib/auth/session";
-import { updateHandler } from "@lib/helpers/handlers";
-import { verifyCode } from "@lib/helpers/server";
-import { emailUpdateSchema } from "@lib/schemas";
-import { getTimeInFuture } from "@lib/utils";
+import { getSession, storeSession } from "@lib/backend/auth/session";
+import { updateHandler } from "@lib/backend/helpers/handlers";
+import { verifyCode } from "@lib/backend/actions/email";
+import { emailUpdateSchema } from "@lib/shared/validation/schemas";
+import { getTimeInFuture } from "@lib/shared/utils";
 import { User } from "@model";
 import { EmailUpdateSchemaType } from "@type/schemas";
 import * as bcrypt from "bcryptjs";

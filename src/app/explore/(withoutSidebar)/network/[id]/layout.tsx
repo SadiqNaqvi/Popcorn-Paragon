@@ -1,8 +1,8 @@
 import { TabContainer, TabList } from "@components/ui";
 import { NotFound } from "@components/fallbacks";
 import TaleonWikiSkeleton from "@components/ui/loading/TaleonWikiSkeleton";
-import { fetchNetwork } from "@lib/contentFetcher";
-import generateDynamicMetadata from "@lib/seo/metadata";
+import { fetchNetwork } from "@lib/shared/helpers/external_fetchers";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
 import { ParloPageProps } from "@type/other";
 import { Metadata } from "next";
 import { PropsWithChildren, Suspense } from "react";

@@ -1,6 +1,6 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { bookmarkAggregationPipeline } from "@lib/pipelines";
-import { getPageParams } from "@lib/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { bookmarkAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { getPageParams } from "@lib/backend/utils";
 import { Bookmark } from "@model";
 
 // Get all the saved Shelves of the user

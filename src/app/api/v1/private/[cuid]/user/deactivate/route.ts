@@ -1,5 +1,5 @@
-import { deleteSession } from "@lib/auth/session";
-import { updateHandler } from "@lib/helpers/handlers";
+import { deleteSession } from "@lib/backend/auth/session";
+import { updateHandler } from "@lib/backend/helpers/handlers";
 import { User } from "@model";
 import { cookies } from "next/headers";
 import * as bcrypt from "bcryptjs"

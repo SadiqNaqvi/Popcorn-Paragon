@@ -1,5 +1,5 @@
-import { postHandler, PrecheckFunction } from "@lib/helpers/handlers";
-import { bookmarkSchema } from "@lib/schemas";
+import { postHandler, PrecheckFunction } from "@lib/backend/helpers/handlers";
+import { bookmarkSchema } from "@lib/shared/validation/schemas";
 import { Bookmark, Comment, Connection, Shelf, Post, User } from "@model";
 import { ErrorCodes } from "@type/other";
 import { BookmarkSchemaType } from "@type/schemas";

@@ -2,7 +2,7 @@
 
 import { BottomSheet, BottomSheetRef, ShareButton } from "@components";
 import { OptionList } from "@components/ui";
-import { parloculaAppURL } from "@lib/constants";
+import { parloculaAppURL } from "@lib/shared/constants";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { VisitIcon, CopyIcon } from "@assets/Icons"

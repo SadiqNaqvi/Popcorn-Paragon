@@ -3,8 +3,8 @@
 import InfiniteScroller from "@components/InfiniteScroller";
 import { FrameTile, PostBar } from "@components/ui";
 import { OnlyFrameSkeletonList, PostListSkeleton } from "@components/ui/loading";
-import { getPostsOfThread } from "@lib/helpers/common";
-import { getQueryKeys } from "@lib/utils";
+import { getPostsOfThread } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys } from "@lib/shared/utils";
 
 type PostSectionProps = {
     id: string,

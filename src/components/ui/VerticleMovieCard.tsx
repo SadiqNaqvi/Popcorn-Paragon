@@ -1,5 +1,5 @@
 import Navigate from "@components/Navigate";
-import { makeUrlSafe } from "@lib/utils";
+import { makeUrlSafe } from "@lib/shared/utils";
 import { RefinedGeneralData } from "@type/external";
 import { twMerge } from "tailwind-merge";
 import ParloImage from "./ParloImage/ParloImage";

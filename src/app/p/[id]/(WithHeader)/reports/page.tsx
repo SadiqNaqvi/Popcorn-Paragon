@@ -1,10 +1,10 @@
 import { LoginModal, ShowError } from "@components/fallbacks";
 import ReportSection from "@components/ReportSection";
-import { getUserFromToken } from "@lib/auth/utils";
-import { allReasonsToReport } from "@lib/constants";
-import { getReportReasonToCountMap, getReportsOnContent } from "@lib/helpers/common";
-import { getQueryClient, prefetchInfiniteQuery } from "@lib/providers/queryClient";
-import { getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { allReasonsToReport } from "@lib/shared/constants";
+import { getReportReasonToCountMap, getReportsOnContent } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryClient, prefetchInfiniteQuery } from "@lib/backend/providers/queryClient";
+import { getQueryKeys } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { ParloPageProps, UidsForReportReason } from "@type/other";
 import { cookies } from "next/headers";

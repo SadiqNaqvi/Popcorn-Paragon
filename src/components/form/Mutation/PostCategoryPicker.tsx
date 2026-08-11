@@ -4,8 +4,8 @@ import { AlertIcon } from "@assets/Icons";
 import BottomSheet, { BottomSheetRef } from "@components/BottomSheet";
 import GeneralTile from "@components/GeneralTile";
 import { OptionalChildren } from "@components/ui";
-import { availablePostCategories } from "@lib/constants";
-import { checkAndReturn } from "@lib/utils";
+import { availablePostCategories } from "@lib/shared/constants";
+import { checkAndReturn } from "@lib/shared/utils";
 import { TypedFunction } from "@type/other";
 import { useRef } from "react";
 

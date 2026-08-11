@@ -3,9 +3,9 @@
 import { CheckIcon } from "@assets/Icons";
 import { InfiniteScroller, ListSelector, ListSelectorRef, Navbar } from "@components";
 import { Button, UserBar } from "@components/ui";
-import { getParticipantsOfRoom, searchFollowers } from "@lib/helpers/common";
-import { inviteParticipants, removeParticipants } from "@lib/helpers/mutations";
-import { getQueryKeys } from "@lib/utils";
+import { getParticipantsOfRoom, searchFollowers } from "@lib/shared/helpers/internal_fetchers";
+import { inviteParticipants, removeParticipants } from "@lib/frontend/helpers/mutations";
+import { getQueryKeys } from "@lib/shared/utils";
 import { ParticipantEnumType } from "@type/internal";
 import { TypedFunction } from "@type/other";
 import { useRef, useState } from "react";

@@ -2,7 +2,7 @@
 
 import { HistoryIcon, XmarkIcon } from "@assets/Icons";
 import { Button } from "@components/ui";
-import { useChageSearchParams, useSearchHistoryStack } from "@lib/hooks";
+import { useChageSearchParams, useSearchHistoryStack } from "@lib/frontend/hooks";
 import { SearchHistoryStackType } from "@type/other";
 
 const SearchHistorySection = () => {

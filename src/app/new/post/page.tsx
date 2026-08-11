@@ -1,7 +1,7 @@
 import { PostMutation } from "@components/form/Mutation";
-import { getUserFromToken } from "@lib/auth/utils";
-import { getPostById, getThreadById } from "@lib/helpers/common";
-import generateDynamicMetadata from "@lib/seo/metadata";
+import { getUserFromToken } from "@lib/backend/utils";
+import { getPostById, getThreadById } from "@lib/shared/helpers/internal_fetchers";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
 import { FullPost, Thread } from "@type/internal";
 import { ParloPageProps } from "@type/other";
 import { cookies } from "next/headers";

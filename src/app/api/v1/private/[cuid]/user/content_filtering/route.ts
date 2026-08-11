@@ -1,7 +1,7 @@
-import { getSession, storeSession } from "@lib/auth/session";
-import { generateToken } from "@lib/auth/token";
-import { setCookies } from "@lib/auth/cookies";
-import { updateHandler } from "@lib/helpers/handlers";
+import { getSession, storeSession } from "@lib/backend/auth/session";
+import { generateToken } from "@lib/backend/auth/token";
+import { setCookies } from "@lib/backend/auth/cookies";
+import { updateHandler } from "@lib/backend/helpers/handlers";
 import { User } from "@model";
 import { cookies } from "next/headers";
 

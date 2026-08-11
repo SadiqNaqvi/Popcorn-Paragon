@@ -1,4 +1,4 @@
-import { getTimeInFuture, parloId } from "@lib/utils";
+import { getTimeInFuture, parloId } from "@lib/shared/utils";
 import { CollaboratorModelType } from "@type/models";
 import type { StrictModel } from "@type/mongoose";
 import { model, models, StrictSchema } from "@type/mongoose";

@@ -1,8 +1,8 @@
-import { deleteRooms } from "@lib/helpers/deletion";
-import { deleteHandler, getHandler, postHandler, updateHandler } from "@lib/helpers/handlers";
-import { checkIfUserMetaExists, getParticipant, getParticipantsOfRoom, getRoomDetails, setDataWhileCreatingRoom, setRoomDetail } from "@lib/helpers/redis/messaging";
-import { convertMatchToLookupExpr } from "@lib/pipelines";
-import { roomSchema, roomUpdateSchema } from "@lib/schemas";
+import { deleteRooms } from "@lib/backend/helpers/deletion";
+import { deleteHandler, getHandler, postHandler, updateHandler } from "@lib/backend/helpers/handlers";
+import { checkIfUserMetaExists, getParticipant, getParticipantsOfRoom, getRoomDetails, setDataWhileCreatingRoom, setRoomDetail } from "@lib/backend/redis/messaging";
+import { convertMatchToLookupExpr } from "@lib/backend/helpers/pipelines";
+import { roomSchema, roomUpdateSchema } from "@lib/shared/validation/schemas";
 import { Connection, Participant, Room, User } from "@model";
 import { FullRoomType } from "@type/internal";
 import { RoomSchemaType, RoomUpdateSchemaType } from "@type/schemas";

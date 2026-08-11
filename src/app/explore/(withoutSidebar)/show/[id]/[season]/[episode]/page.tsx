@@ -1,8 +1,8 @@
 import { TaleonWikiHeader, TaleonWikiSection } from "@app/explore/(withoutSidebar)/components";
 import { ArtistCard, ParloFooter } from "@components/ui";
 import { NotFound } from "@components/fallbacks";
-import { fetchEpisodeForSeason, fetchShow } from "@lib/contentFetcher";
-import { makeUrlSafe } from "@lib/utils";
+import { fetchEpisodeForSeason, fetchShow } from "@lib/shared/helpers/external_fetchers";
+import { makeUrlSafe } from "@lib/shared/utils";
 import { ParloPageProps } from "@type/other";
 import { Metadata } from "next";
 

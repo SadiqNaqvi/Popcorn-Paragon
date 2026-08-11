@@ -1,7 +1,7 @@
 import { ExternalImageType } from "@type/other";
 import { ParloImageProps } from "./ParloImage";
-import { backdrop_sizes, logo_sizes, poster_sizes, profile_sizes, still_sizes } from "@lib/constants";
-import { getPoster, isEqual } from "@lib/utils";
+import { backdrop_sizes, logo_sizes, poster_sizes, profile_sizes, still_sizes } from "@lib/shared/constants";
+import { getPoster, isEqual } from "@lib/shared/utils";
 import { ExternalImageTypeToSizeMap } from "@type/other";
 
 export type InternalFrameType = "groupPoster" | "shelfPoster" | "userProfile";

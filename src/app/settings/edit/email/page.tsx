@@ -3,12 +3,12 @@
 import { Navbar } from "@components";
 import { Form, Input, OTPInput, Passkey } from "@components/form";
 import { Button, LoadingSpinner } from "@components/ui";
-import generateFingerprint from "@lib/auth/fingerprint";
-import { updateEmail } from "@lib/helpers/mutations";
-import { sendVerificationCode } from "@lib/helpers/server";
-import { useCustomReducer } from "@lib/hooks";
-import { emailUpdateSchema, verificationCodeSchema } from "@lib/schemas";
-import { codetoError, getTimeInFuture } from "@lib/utils";
+import { sendVerificationCode } from "@lib/backend/actions/email";
+import generateFingerprint from "@lib/frontend/auth/fingerprint";
+import { updateEmail } from "@lib/frontend/helpers/mutations";
+import { useCustomReducer } from "@lib/frontend/hooks";
+import { codetoError, getTimeInFuture } from "@lib/shared/utils";
+import { emailUpdateSchema } from "@lib/shared/validation/schemas";
 import useCurrentUser from "@store/user";
 import { useRef } from "react";
 import { toast } from "sonner";

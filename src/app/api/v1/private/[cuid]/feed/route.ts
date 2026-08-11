@@ -1,8 +1,10 @@
-import { oneDayInSeconds, oneHourInSeconds, queryLimit } from "@lib/constants";
-import { getHandler } from "@lib/helpers/handlers";
-import { attachNsfwInPipeline, createPipeline, postsAggregationPipeline } from "@lib/pipelines";
-import { getUpstashRedis, zaddInUpstash } from "@lib/providers/redis";
-import { createArray, getPageParams } from "@lib/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { attachNsfwInPipeline, createPipeline, postsAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { getUpstashRedis } from "@lib/backend/providers/redis";
+import { zaddInUpstash } from "@lib/backend/redis/utils";
+import { getPageParams } from "@lib/backend/utils";
+import { oneHourInSeconds, queryLimit } from "@lib/shared/constants";
+import { createArray } from "@lib/shared/utils";
 import { Connection, Member, Post } from "@model";
 import { AggregatedResponse, MerePost } from "@type/internal";
 
@@ -238,7 +240,7 @@ export const GET = getHandler(async (r, { cuid }) => {
     const page = getPageParams(r) - 1;
     const nsfw = Boolean(r.nextUrl.searchParams.get("nsfw") === "true");
     const redis = await getUpstashRedis();
-    
+
     const postIdsInRedisCount = await redis.zcount(`feed:${cuid}`, "-inf", "+inf");
 
     if (postIdsInRedisCount && postIdsInRedisCount > (queryLimit * page)) {

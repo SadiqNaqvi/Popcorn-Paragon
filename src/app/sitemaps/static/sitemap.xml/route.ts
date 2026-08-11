@@ -1,4 +1,4 @@
-import { app_production_url } from "@lib/constants";
+import { app_production_url } from "@lib/shared/constants";
 import { MetadataRoute } from "next";
 
 const escapeXml = (str: string) => str

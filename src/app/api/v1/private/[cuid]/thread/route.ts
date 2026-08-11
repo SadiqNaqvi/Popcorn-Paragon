@@ -1,8 +1,8 @@
-import { postHandler } from "@lib/helpers/handlers";
-import { threadSchemaServer } from "@lib/schemas";
+import { postHandler } from "@lib/backend/helpers/handlers";
+import { threadSchemaServer } from "@lib/shared/validation/schemas";
 import { ThreadSchemaServer } from "@type/schemas";
 import { Member, Thread, User } from "@model";
-import { parloculaAppURL } from "@lib/constants";
+import { parloculaAppURL } from "@lib/shared/constants";
 
 // Creating a thread
 export const POST = postHandler<ThreadSchemaServer>({

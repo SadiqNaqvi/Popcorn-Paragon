@@ -1,4 +1,4 @@
-import { getUserFromToken } from "@lib/auth/utils";
+import { getUserFromToken } from "@lib/backend/utils";
 import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";

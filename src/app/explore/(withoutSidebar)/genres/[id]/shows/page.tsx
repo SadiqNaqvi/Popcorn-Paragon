@@ -3,7 +3,7 @@
 import InfiniteScroller from "@components/InfiniteScroller";
 import { VerticleMovieCard } from "@components/ui";
 import { VerticalTaleonCardSkeletonList } from "@components/ui/loading";
-import { fetchShowsWithGenres } from "@lib/contentFetcher";
+import { fetchShowsWithGenres } from "@lib/shared/helpers/external_fetchers";
 import { RefinedGeneralData } from "@type/external";
 import { useParams } from "next/navigation";
 

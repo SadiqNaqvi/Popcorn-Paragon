@@ -1,7 +1,7 @@
 import { UserWithoutCircleIcon } from "@assets/Icons";
 import { Navbar, Navigate, Sidebar } from "@components";
 import UserPageMockup from "@components/ui/mockup/UserPage";
-import { getUserFromToken } from "@lib/auth/utils";
+import { getUserFromToken } from "@lib/backend/utils";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 

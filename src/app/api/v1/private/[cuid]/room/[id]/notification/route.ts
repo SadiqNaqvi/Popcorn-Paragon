@@ -1,5 +1,5 @@
-import { updateHandler } from "@lib/helpers/handlers";
-import { updateRoomNotification } from "@lib/helpers/redis/messaging";
+import { updateHandler } from "@lib/backend/helpers/handlers";
+import { updateRoomNotification } from "@lib/backend/redis/messaging";
 import { Participant } from "@model";
 
 // Toggle room notification

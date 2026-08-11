@@ -3,11 +3,11 @@
 import { Navbar } from "@components";
 import ListSelector, { ListSelectorRef, RefinedValues } from "@components/ListSelector";
 import { Button } from "@components/ui";
-import { shelfCollaboratorsLimit } from "@lib/constants";
-import { getFollowers, searchFollowers } from "@lib/helpers/common";
-import { inviteCollaboratorsMutation, removeCollaboratorsMutation } from "@lib/helpers/mutations";
-import appToast from "@lib/providers/toast";
-import { getQueryKeys } from "@lib/utils";
+import { shelfCollaboratorsLimit } from "@lib/shared/constants";
+import { getFollowers, searchFollowers } from "@lib/shared/helpers/internal_fetchers";
+import { inviteCollaboratorsMutation, removeCollaboratorsMutation } from "@lib/frontend/helpers/mutations";
+import appToast from "@lib/frontend/providers/appToast";
+import { getQueryKeys } from "@lib/shared/utils";
 import { UserMetaData } from "@store/user";
 import { MereUser } from "@type/internal";
 import { TypedFunction } from "@type/other";

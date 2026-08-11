@@ -2,15 +2,15 @@
 
 import { BottomSheet, InfiniteScroller, Navbar } from "@components";
 import { Button, LoadingSpinner, OptionalChildren, ReportedContentBar } from "@components/ui";
-import { actionOnReportedContents } from "@lib/helpers/mutations";
-import { getReportedContents } from "@lib/helpers/common";
-import { getQueryClient } from "@lib/providers/queryClient";
-import { getQueryKeys } from "@lib/utils";
+import { actionOnReportedContents } from "@lib/frontend/helpers/mutations";
+import { getReportedContents } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryClient } from "@lib/backend/providers/queryClient";
+import { getQueryKeys } from "@lib/shared/utils";
 import { useMutation } from "@tanstack/react-query";
 import { ReportedContent } from "@type/internal";
 import { AvailableActionsForReport, ReportActionSchemaType } from "@type/schemas";
 import { useState } from "react";
-import appToast from "@lib/providers/toast";
+import appToast from "@lib/frontend/providers/appToast";
 
 type Props = {
     type: "post" | "comment",

@@ -1,5 +1,5 @@
-import { updateHandler } from "@lib/helpers/handlers";
-import { addParticipantInRoom } from "@lib/helpers/redis/messaging";
+import { updateHandler } from "@lib/backend/helpers/handlers";
+import { addParticipantInRoom } from "@lib/backend/redis/messaging";
 import { Room, User } from "@model";
 import Participant from "@model/participants";
 

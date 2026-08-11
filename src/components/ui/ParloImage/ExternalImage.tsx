@@ -1,4 +1,4 @@
-import { getPoster } from "@lib/utils";
+import { getPoster } from "@lib/shared/utils";
 import { ExternalImageType } from "@type/other";
 import { twMerge } from "tailwind-merge";
 import { ParloImageProps } from "./ParloImage";

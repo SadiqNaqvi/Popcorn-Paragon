@@ -1,5 +1,5 @@
-import { app_production_url } from "@lib/constants";
-import { connectDatabase } from "@lib/database";
+import { app_production_url } from "@lib/shared/constants";
+import { connectDatabase } from "@lib/backend/providers/database";
 import { Post, Shelf, Taleon, Thread, User } from "@model";
 import { StrictModel } from "@type/mongoose";
 import { NextResponse } from "next/server";

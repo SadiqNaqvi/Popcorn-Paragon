@@ -1,5 +1,5 @@
-import appToast from "@lib/providers/toast";
-import { calculateAge } from "@lib/utils";
+import appToast from "@lib/frontend/providers/appToast";
+import { calculateAge } from "@lib/shared/utils";
 import { localForageStorage } from "@store/utils";
 import { CurrentUser, Frame } from "@type/internal";
 import { TypedFunction } from "@type/other";

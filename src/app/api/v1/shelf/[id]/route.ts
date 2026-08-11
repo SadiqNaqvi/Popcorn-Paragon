@@ -1,7 +1,7 @@
-import { filterToSort } from "@lib/constants";
-import { getHandler } from "@lib/helpers/handlers";
-import { shelvesAggregationPipeline } from "@lib/pipelines";
-import { getSearchParams } from "@lib/utils";
+import { filterToSort } from "@lib/shared/constants";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { shelvesAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { getSearchParams } from "@lib/backend/utils";
 import { Shelf } from "@model";
 
 // Get all the public shelves of the user.

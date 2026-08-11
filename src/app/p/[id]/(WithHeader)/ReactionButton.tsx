@@ -2,8 +2,8 @@
 
 import { ReactIcon } from "@assets/Icons";
 import { BottomSheet, BottomSheetRef, UserBasedButton, UserBasedButtonProps } from "@components";
-import { getReactionOnPost } from "@lib/helpers/common";
-import { getQueryKeys, numberConverter } from "@lib/utils";
+import { getReactionOnPost } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys, numberConverter } from "@lib/shared/utils";
 import EmojiPicker, { Emoji, type EmojiClickData, Theme } from "emoji-picker-react";
 import { useTheme } from "next-themes";
 import { useRef } from "react";

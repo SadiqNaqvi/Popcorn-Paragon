@@ -1,7 +1,7 @@
 "use client";
 
 import { OptionalChildren, ParloImage, ParloImageFrameType } from "@components/ui";
-import { useHistoryStack } from "@lib/hooks";
+import { useHistoryStack } from "@lib/frontend/hooks";
 import { HistoryStackType } from "@type/other";
 import { useRouter } from "next/navigation";
 import { twMerge } from "tailwind-merge";

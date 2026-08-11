@@ -3,8 +3,8 @@
 import { SendIcon } from "@assets/Icons";
 import { Form, Input } from "@components/form";
 import { Button, MessageBar, OptionalChildren, ParloImage } from "@components/ui";
-import { createRoomMutation } from "@lib/helpers/mutations";
-import { parloId } from "@lib/utils";
+import { createRoomMutation } from "@lib/frontend/helpers/mutations";
+import { parloId } from "@lib/shared/utils";
 import useGlobalStore from "@store/globalStore";
 import useCurrentUser from "@store/user";
 import { MereUser } from "@type/internal";

@@ -1,5 +1,5 @@
 import { LoginModal } from "@components/fallbacks";
-import { getUserFromToken } from "@lib/auth/utils"
+import { getUserFromToken } from "@lib/backend/utils"
 import { cookies } from "next/headers"
 import { PropsWithChildren } from "react";
 

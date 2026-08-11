@@ -1,8 +1,8 @@
 import VerticleThreadList from "@app/explore/(withoutSidebar)/components/VerticleThreadList";
-import { getUserFromToken } from "@lib/auth/utils";
-import { getThreadsForTaleonOrArtist } from "@lib/helpers/common";
-import { getQueryClient, prefetchInfiniteQuery } from "@lib/providers/queryClient";
-import { refineSearchParams } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { getThreadsForTaleonOrArtist } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryClient, prefetchInfiniteQuery } from "@lib/backend/providers/queryClient";
+import { refineSearchParams } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { ParloPageProps } from "@type/other";
 import { cookies } from "next/headers";

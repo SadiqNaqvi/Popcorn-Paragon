@@ -1,13 +1,12 @@
+import { sendNotification } from "@lib/backend/actions/notification";
 import {
   deleteHandler,
   getHandler,
   postHandler,
   PrecheckFunction,
   updateHandler,
-} from "@lib/helpers/handlers";
-import { sendNotification } from "@lib/helpers/server";
+} from "@lib/backend/helpers/handlers";
 import { Connection, User } from "@model";
-import { CurrentUser } from "@type/internal";
 
 // Check the user-user connection.
 export const GET = getHandler(async (_, params) => {

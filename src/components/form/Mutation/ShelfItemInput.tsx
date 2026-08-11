@@ -3,7 +3,7 @@
 import { XmarkIcon } from "@assets/Icons";
 import { BottomSheet, BottomSheetRef, ListSelector, ListSelectorRef, RefinedValues } from "@components";
 import { Button, OptionalChildren, ShowOnlyShelfItem } from "@components/ui";
-import { searchTaleonsOnly } from "@lib/contentFetcher";
+import { searchTaleonsOnly } from "@lib/shared/helpers/external_fetchers";
 import { ExtSearchDataTaleonOnly } from "@type/external";
 import { TaleonSchemaType as ItemType } from "@type/schemas";
 import { RefObject, useImperativeHandle, useRef, useState } from "react";

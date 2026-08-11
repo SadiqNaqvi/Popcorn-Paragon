@@ -1,9 +1,10 @@
-import { getHandler, postHandler } from "@lib/helpers/handlers";
-import { checkIfParticipantExists, getMessagesFromCache, getParticipant, getParticipantsOfRoom, handleNewMessage, storeMessagesInCache } from "@lib/helpers/redis/messaging";
-import { sendNotificationForMessage } from "@lib/helpers/server";
-import { createPipeline } from "@lib/pipelines";
-import { messageSchema } from "@lib/schemas";
-import { getPageParams, getPoster } from "@lib/utils";
+import { getHandler, postHandler } from "@lib/backend/helpers/handlers";
+import { checkIfParticipantExists, getMessagesFromCache, getParticipant, getParticipantsOfRoom, handleNewMessage, storeMessagesInCache } from "@lib/backend/redis/messaging";
+import { sendNotificationForMessage } from "@lib/backend/actions/notification";
+import { createPipeline } from "@lib/backend/helpers/pipelines";
+import { messageSchema } from "@lib/shared/validation/schemas";
+import { getPoster } from "@lib/shared/utils";
+import { getPageParams } from "@lib/backend/utils";
 import { Message } from "@model";
 import { MessageModelType } from "@type/models";
 import { MessageSchemaType } from "@type/schemas";

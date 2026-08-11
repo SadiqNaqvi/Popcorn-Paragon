@@ -1,7 +1,7 @@
-import { parloculaAppURL } from "@lib/constants";
-import { deletePosts } from "@lib/helpers/deletion";
-import { deleteHandler, updateHandler } from "@lib/helpers/handlers";
-import { postUpdateSchema } from "@lib/schemas";
+import { parloculaAppURL } from "@lib/shared/constants";
+import { deletePosts } from "@lib/backend/helpers/deletion";
+import { deleteHandler, updateHandler } from "@lib/backend/helpers/handlers";
+import { postUpdateSchema } from "@lib/shared/validation/schemas";
 import { Post, Thread, User } from "@model";
 import { PostUpdateSchemaType } from "@type/schemas";
 

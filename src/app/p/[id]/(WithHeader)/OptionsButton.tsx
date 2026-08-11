@@ -4,7 +4,7 @@ import { Ellipsis } from "@assets/Icons";
 import { OptionMenu } from "@components";
 import { ReportSheet, WarningSheet } from "@components/sheets";
 import OptionList, { NestedSheetTrigger } from "@components/ui/OptionList";
-import { blockUserMutation, deletePostMutation } from "@lib/helpers/mutations";
+import { blockUserMutation, deletePostMutation } from "@lib/frontend/helpers/mutations";
 import useCurrentUser from "@store/user";
 import { FullPost } from "@type/internal";
 import { useRouter } from "next/navigation";

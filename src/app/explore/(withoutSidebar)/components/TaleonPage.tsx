@@ -2,7 +2,7 @@ import { CollectionIcon, CrownIcon, EyesIcon, HeartIcon, StarIcon } from "@asset
 import { Navigate } from "@components";
 import { NotFound } from "@components/fallbacks";
 import { ArtistCard, LinkTile, ParloFooter, VerticleMovieCard } from "@components/ui";
-import { checkAndReturn, createArray, makeUrlSafe, numberConverter } from "@lib/utils";
+import { checkAndReturn, createArray, makeUrlSafe, numberConverter } from "@lib/shared/utils";
 import { RefinedCast, RefinedMovieData, RefinedShowData } from "@type/external";
 import { FullTaleonType, Link } from "@type/internal";
 import { ConfirmedTaleon } from "@type/schemas";

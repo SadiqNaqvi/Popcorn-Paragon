@@ -1,7 +1,7 @@
 "use client";
 
 import { CheckBoxIcon, EmptyBoxIcon } from "@assets/Icons";
-import appToast from "@lib/providers/toast";
+import appToast from "@lib/frontend/providers/appToast";
 import { Frame } from "@type/internal";
 import { FunctionComponent, RefObject, useCallback, useImperativeHandle, useRef } from "react";
 import { twMerge } from "tailwind-merge";

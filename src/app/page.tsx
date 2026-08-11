@@ -1,6 +1,6 @@
 import { Navigate } from "@components";
-import { getUserFromToken } from "@lib/auth/utils";
-import generateDynamicMetadata from "@lib/seo/metadata";
+import { getUserFromToken } from "@lib/backend/utils";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 

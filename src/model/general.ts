@@ -1,4 +1,4 @@
-import { extMediaSource } from "@lib/constants";
+import { extMediaSource } from "@lib/shared/constants";
 import {
   BasedOnModelType,
   FrameModelType,

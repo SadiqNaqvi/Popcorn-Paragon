@@ -3,18 +3,18 @@ import { NotFound, ShowError } from "@components/fallbacks";
 import JsonLd from "@components/JsonLd";
 import { OptionalChildren, TabContainer, TabList } from "@components/ui";
 import PostPageSkeleton from "@components/ui/loading/PostPageSkeleton";
-import { getUserFromToken } from "@lib/auth/utils";
-import { checkIfItemSaved, getPostById, getReactionOnPost } from "@lib/helpers/common";
-import { fetchQuery, getQueryClient, prefetchQuery } from "@lib/providers/queryClient";
-import { generateJsonLdForPost } from "@lib/seo/jsonld";
-import { calculateAge, getQueryKeys, isValidParloId } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { checkIfItemSaved, getPostById, getReactionOnPost } from "@lib/shared/helpers/internal_fetchers";
+import { fetchQuery, getQueryClient, prefetchQuery } from "@lib/backend/providers/queryClient";
+import { generateJsonLdForPost } from "@lib/shared/seo/jsonld";
+import { calculateAge, getQueryKeys, isValidParloId } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { ParloPageProps } from "@type/other";
 import { Metadata } from "next";
 import { cookies } from "next/headers";
 import { PropsWithChildren, Suspense } from "react";
 import PostHeader from "./PostHeader";
-import generateDynamicMetadata from "@lib/seo/metadata";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
 
 export const generateMetadata = async ({ params }: ParloPageProps): Promise<Metadata> => {
 

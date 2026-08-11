@@ -3,10 +3,10 @@
 import { ListSelector, ListSelectorRef, Navbar } from "@components";
 import { RefinedValues } from "@components/ListSelector";
 import { Button } from "@components/ui";
-import { threadManagersLimit } from "@lib/constants";
-import { getMembers, searchMembers } from "@lib/helpers/common";
-import { inviteManagersMutation, removeManagersMutation } from "@lib/helpers/mutations";
-import { getQueryKeys } from "@lib/utils";
+import { threadManagersLimit } from "@lib/shared/constants";
+import { getMembers, searchMembers } from "@lib/shared/helpers/internal_fetchers";
+import { inviteManagersMutation, removeManagersMutation } from "@lib/frontend/helpers/mutations";
+import { getQueryKeys } from "@lib/shared/utils";
 import { UserMetaData } from "@store/user";
 import { MereUser, ModeratorType } from "@type/internal";
 import { TypedFunction } from "@type/other";

@@ -1,6 +1,6 @@
 import { CollectionIcon, GroupIcon, ImageIconFill, UserWithoutCircleIcon } from "@assets/Icons";
-import { convertByteIntoSize, decodeHash } from "@lib/helpers/media";
-import { getPoster } from "@lib/utils";
+import { convertByteIntoSize } from "@lib/frontend/helpers/media";
+import { getPoster } from "@lib/shared/utils";
 import { Frame } from "@type/internal";
 import { ExternalImageType } from "@type/other";
 import Image from "next/image";
@@ -9,6 +9,7 @@ import OptionalChildren from "../OptionalChildren";
 import ExternalImage from "./ExternalImage";
 import { getFancyAttributes, ImageSize, InternalFrameType, ParloImageFrameType, turnSizesArrIntoString } from "./utils";
 import ImageWrapper from "./ImageWrapper";
+import { decodeHash } from "@lib/shared/helpers/thumb_hash";
 
 export type ParloImageProps = {
     className?: string,

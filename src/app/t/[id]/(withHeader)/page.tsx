@@ -1,8 +1,8 @@
-import { getQueryClient } from "@lib/providers/queryClient"
+import { getQueryClient } from "@lib/backend/providers/queryClient"
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query"
 import PostsTab from "./posts"
 import { contentFetcher } from "./utils"
-import { getUserFromToken } from "@lib/auth/utils"
+import { getUserFromToken } from "@lib/backend/utils"
 import { cookies } from "next/headers"
 import { ParloPageProps } from "@type/other"
 

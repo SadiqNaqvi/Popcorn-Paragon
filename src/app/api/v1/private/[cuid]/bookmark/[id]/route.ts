@@ -1,4 +1,4 @@
-import { deleteHandler, getHandler } from "@lib/helpers/handlers";
+import { deleteHandler, getHandler } from "@lib/backend/helpers/handlers";
 import { Bookmark, Comment, Post, Shelf } from "@model";
 
 // Check if a content is saved by the current user.

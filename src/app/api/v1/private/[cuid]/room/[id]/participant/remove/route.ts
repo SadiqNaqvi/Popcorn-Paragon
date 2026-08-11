@@ -1,7 +1,7 @@
-import { participantsRemoveOrInviteLimit } from "@lib/constants";
-import { postHandler } from "@lib/helpers/handlers";
-import { getParticipant, removeParticipantsFromCache } from "@lib/helpers/redis/messaging";
-import { createArrayOfUidsSchema } from "@lib/schemas";
+import { participantsRemoveOrInviteLimit } from "@lib/shared/constants";
+import { postHandler } from "@lib/backend/helpers/handlers";
+import { getParticipant, removeParticipantsFromCache } from "@lib/backend/redis/messaging";
+import { createArrayOfUidsSchema } from "@lib/shared/validation/schemas";
 import { Participant, User } from "@model";
 
 const schema = createArrayOfUidsSchema(participantsRemoveOrInviteLimit);

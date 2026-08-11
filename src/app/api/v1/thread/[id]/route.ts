@@ -1,5 +1,5 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { convertMatchToLookupExpr } from "@lib/pipelines";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { convertMatchToLookupExpr } from "@lib/backend/helpers/pipelines";
 import { Thread } from "@model";
 
 // Get the details of the thread by thread id;

@@ -1,6 +1,6 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { attachNsfwInPipeline, postsAggregationPipeline } from "@lib/pipelines";
-import { getSearchParams } from "@lib/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { attachNsfwInPipeline, postsAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { getSearchParams } from "@lib/backend/utils";
 import { Post } from "@model";
 
 // Get posts which quoted a certain post

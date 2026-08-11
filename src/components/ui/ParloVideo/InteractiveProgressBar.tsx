@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useGlobalOptions } from "./helpers";
-import { formatTimeAsDuration } from "@lib/helpers/media";
+import { formatTimeAsDuration } from "@lib/frontend/helpers/media";
 
 const InteractiveProgressBar = () => {
     const { setProgress, progress, duration, videoRef } = useGlobalOptions();

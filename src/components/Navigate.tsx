@@ -1,6 +1,6 @@
 "use client";
 
-import { useHistoryStack } from "@lib/hooks";
+import { useHistoryStack } from "@lib/frontend/hooks";
 import { Frame } from "@type/internal";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -19,7 +19,7 @@ export type NavigateComponentProps = {
 } & React.ButtonHTMLAttributes<HTMLButtonElement> & React.AnchorHTMLAttributes<HTMLAnchorElement>
 
 
-const Navigate = ({ children, comp, goto, type, className, preload, onContextMenu, historyPayload, ...args }: NavigateComponentProps) => {
+const Navigate = ({ children, comp, goto, type, className, preload=false, onContextMenu, historyPayload, ...args }: NavigateComponentProps) => {
 
     const navigator = useRouter();
     const pathname = usePathname();
@@ -67,7 +67,7 @@ const Navigate = ({ children, comp, goto, type, className, preload, onContextMen
             <NavigationSheet sheetRef={sheetRef} href={goto} />
             <Link
                 {...args}
-                prefetch={preload ?? false}
+                prefetch={preload}
                 href={goto}
                 onClick={handleNavigation}
                 onContextMenu={onContextMenu ?? handleContextMenu}

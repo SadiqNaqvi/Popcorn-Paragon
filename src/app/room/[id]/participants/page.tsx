@@ -1,7 +1,7 @@
-import { getUserFromToken } from "@lib/auth/utils";
-import { getParticipantsOfRoom, getRoomById } from "@lib/helpers/common";
-import { fetchQuery, getQueryClient, prefetchInfiniteQuery } from "@lib/providers/queryClient";
-import { getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { getParticipantsOfRoom, getRoomById } from "@lib/shared/helpers/internal_fetchers";
+import { fetchQuery, getQueryClient, prefetchInfiniteQuery } from "@lib/backend/providers/queryClient";
+import { getQueryKeys } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { ParloPageProps } from "@type/other";
 import { cookies } from "next/headers";

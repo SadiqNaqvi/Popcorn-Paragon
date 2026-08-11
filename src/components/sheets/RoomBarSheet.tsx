@@ -2,7 +2,7 @@
 
 import OptionMenu from "@components/OptionMenu";
 import { OptionList } from "@components/ui";
-import { hideRoom, updateNotificationOfRoom } from "@lib/helpers/mutations";
+import { hideRoom, updateNotificationOfRoom } from "@lib/frontend/helpers/mutations";
 import useGlobalStore from "@store/globalStore";
 import useRoomStore from "@store/roomStore";
 import useCurrentUser from "@store/user";

@@ -1,9 +1,9 @@
 "use client";
 
-import { allReasonsToReport } from "@lib/constants";
-import { getReportsOnContent } from "@lib/helpers/common";
-import { useChageSearchParams } from "@lib/hooks";
-import { getQueryKeys } from "@lib/utils";
+import { allReasonsToReport } from "@lib/shared/constants";
+import { getReportsOnContent } from "@lib/shared/helpers/internal_fetchers";
+import { useChageSearchParams } from "@lib/frontend/hooks";
+import { getQueryKeys } from "@lib/shared/utils";
 import { ReportsType } from "@type/internal";
 import { UidsForReportReason } from "@type/other";
 import { ReportTypeEnum } from "@type/schemas";

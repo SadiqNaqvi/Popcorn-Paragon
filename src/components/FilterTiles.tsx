@@ -1,6 +1,6 @@
 "use client";
 
-import { queryFilters } from "@lib/constants";
+import { queryFilters } from "@lib/shared/constants";
 import { QueryFilterType } from "@type/other";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";

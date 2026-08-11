@@ -2,7 +2,7 @@
 
 import { InfiniteScroller } from "@components";
 import { VerticleMovieCard } from "@components/ui";
-import { fetchMoviesWithCompany, fetchMoviesWithNetwork, fetchShowsWithCompany, fetchShowsWithNetwork } from "@lib/contentFetcher";
+import { fetchMoviesWithCompany, fetchMoviesWithNetwork, fetchShowsWithCompany, fetchShowsWithNetwork } from "@lib/shared/helpers/external_fetchers";
 import { PaginatedData, PersonWork, RefinedGeneralData, SortOptions } from "@type/external";
 import { GeneralGetReturn } from "@type/internal";
 

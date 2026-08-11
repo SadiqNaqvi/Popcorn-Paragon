@@ -1,5 +1,5 @@
 import { NotFound } from "@components/fallbacks";
-import { isValidParloId } from "@lib/utils";
+import { isValidParloId } from "@lib/shared/utils";
 import { ParloPageProps } from "@type/other";
 import { PropsWithChildren } from "react";
 

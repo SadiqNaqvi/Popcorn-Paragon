@@ -1,15 +1,15 @@
-import { getUserFromToken } from "@lib/auth/utils";
-import { fetchShow } from "@lib/contentFetcher";
-import { getAllShelvesOfUser, getShelvesForTaleon } from "@lib/helpers/common";
-import { getQueryClient, prefetchInfiniteQuery, prefetchQuery } from "@lib/providers/queryClient";
-import { getPoster, getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { fetchShow } from "@lib/shared/helpers/external_fetchers";
+import { getAllShelvesOfUser, getShelvesForTaleon } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryClient, prefetchInfiniteQuery, prefetchQuery } from "@lib/backend/providers/queryClient";
+import { getPoster, getQueryKeys } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { ParloPageProps } from "@type/other";
 import { Metadata } from "next";
 import { cookies } from "next/headers";
 import TaleonPage from "../../components/TaleonPage";
-import generateDynamicMetadata from "@lib/seo/metadata";
-import { generateJsonLdForShow } from "@lib/seo/jsonld";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
+import { generateJsonLdForShow } from "@lib/shared/seo/jsonld";
 import JsonLd from "@components/JsonLd";
 
 export const generateMetadata = async ({ params }: ParloPageProps): Promise<Metadata> => {
@@ -23,7 +23,7 @@ export const generateMetadata = async ({ params }: ParloPageProps): Promise<Meta
 
     return generateDynamicMetadata({
         title,
-        allowRobots: true,
+        allowRobots: false,
         description: `${overview} - Explore seasons, cast, ratings, communities, threads, shelves, and fan discussions on Parlocula.`,
         coverImage: backdrop ? getPoster({ path: backdrop, external: true, type: "backdrop", size: "w1280" }) : undefined,
         url: `/explore/show/${id}`,

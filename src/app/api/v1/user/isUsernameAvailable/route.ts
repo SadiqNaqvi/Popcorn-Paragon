@@ -1,5 +1,5 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { usernamePattern } from "@lib/constants";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { usernamePattern } from "@lib/shared/constants";
 import { User } from "@model";
 import { NextRequest } from "next/server";
 

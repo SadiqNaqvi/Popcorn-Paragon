@@ -2,9 +2,9 @@
 
 import { SendIcon, XmarkIcon } from "@assets/Icons";
 import { Button, OptionalChildren } from "@components/ui";
-import { acceptRoomInvitation, rejectRoomInvitation, sendMessage } from "@lib/helpers/mutations";
-import { getAblyOnClient } from "@lib/providers/ably";
-import { parloId } from "@lib/utils";
+import { acceptRoomInvitation, rejectRoomInvitation, sendMessage } from "@lib/frontend/helpers/mutations";
+import { getAblyOnClient } from "@lib/frontend/providers/ably";
+import { parloId } from "@lib/shared/utils";
 import useGlobalStore from "@store/globalStore";
 import useCurrentUser from "@store/user";
 import { FullRoomType, MessageReplyType } from "@type/internal";

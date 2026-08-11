@@ -1,7 +1,7 @@
 import FrameSlider from "@app/p/[id]/(WithHeader)/FrameSlider";
 import { BookmarkIcon, CommentIcon, FrameIcon, LinkIcon, ThumbUpIcon } from "@assets/Icons";
 import { Navigate } from "@components";
-import { makeUrlSafe, numberConverter, timeAgo } from "@lib/utils";
+import { makeUrlSafe, numberConverter, timeAgo } from "@lib/shared/utils";
 import { MerePost, ReportedContent, ReportedPost } from "@type/internal";
 import { BreadCrumbs, BreadCrumbTile, MetadataTile, MetadataTileContainer, ParloImage } from "./";
 

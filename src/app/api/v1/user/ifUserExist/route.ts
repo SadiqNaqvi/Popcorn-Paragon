@@ -1,5 +1,5 @@
-import { emailPattern } from "@lib/constants";
-import { getHandler } from "@lib/helpers/handlers";
+import { emailPattern } from "@lib/shared/constants";
+import { getHandler } from "@lib/backend/helpers/handlers";
 import { User } from "@model";
 
 // Check if a user exists with a certain email

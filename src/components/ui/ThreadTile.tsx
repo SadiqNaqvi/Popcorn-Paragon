@@ -1,4 +1,4 @@
-import { makeUrlSafe, numberConverter } from "@lib/utils"
+import { makeUrlSafe, numberConverter } from "@lib/shared/utils"
 import { MereThread } from "@type/internal"
 import { Navigate } from "@components"
 import { OptionalChildren, ParloImage } from "@components/ui"

@@ -1,15 +1,15 @@
 "use client";
 
-import { allReasonsToReport, contentReportOptions, threadReportOptions, userReportOptions } from "@lib/constants";
-import { checkIfReportExists } from "@lib/helpers/common";
-import { useQueryHook } from "@lib/hooks";
-import { getQueryKeys } from "@lib/utils";
+import { allReasonsToReport, contentReportOptions, threadReportOptions, userReportOptions } from "@lib/shared/constants";
+import { checkIfReportExists } from "@lib/shared/helpers/internal_fetchers";
+import { useQueryHook } from "@lib/frontend/hooks";
+import { getQueryKeys } from "@lib/shared/utils";
 import { useState } from "react";
 import { Form, Textarea } from "../form";
 import Choice from "../form/Choice";
 import { CheckIcon } from "@assets/Icons";
 import { ReportTypeEnum } from "@type/schemas";
-import { submitReportMutation } from "@lib/helpers/mutations";
+import { submitReportMutation } from "@lib/frontend/helpers/mutations";
 import { Button, OptionalChildren } from "../ui";
 import { UidsForReportReason } from "@type/other";
 import { toast } from "sonner";

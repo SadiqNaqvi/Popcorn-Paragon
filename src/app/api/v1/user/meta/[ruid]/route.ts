@@ -1,4 +1,4 @@
-import { getUserMetaFromCache } from "@lib/helpers/redis/messaging";
+import { getUserMetaFromCache } from "@lib/backend/redis/messaging";
 
 // Get User Metadata of a user {_id, username, profile}
 export const GET = async (r: any, { params }: { params: Promise<{ ruid: string }> }) => {

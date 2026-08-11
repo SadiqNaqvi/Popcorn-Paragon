@@ -1,6 +1,6 @@
-import { queryLimit } from "@lib/constants";
-import { getHandler } from "@lib/helpers/handlers";
-import { getPageParams } from "@lib/utils";
+import { queryLimit } from "@lib/shared/constants";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { getPageParams } from "@lib/backend/utils";
 import Notification from "@model/notifications";
 
 // Get all the notifications of the current user.

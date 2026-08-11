@@ -1,5 +1,5 @@
-import { oneWeekInMiliSeconds } from "@lib/constants";
-import { parloId } from "@lib/utils";
+import { oneWeekInMiliSeconds } from "@lib/shared/constants";
+import { parloId } from "@lib/shared/utils";
 import { RoomModelType } from "@type/models";
 import { model, models, Schema, StrictSchema } from "@type/mongoose";
 import type { StrictModel, } from "@type/mongoose";

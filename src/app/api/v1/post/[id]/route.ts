@@ -1,4 +1,4 @@
-import { getHandler } from "@lib/helpers/handlers";
+import { getHandler } from "@lib/backend/helpers/handlers";
 import { Post } from "@model";
 
 // Get full post by id

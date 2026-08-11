@@ -1,4 +1,4 @@
-import { getUserFromToken } from "@lib/auth/utils";
+import { getUserFromToken } from "@lib/backend/utils";
 import { cookies } from "next/headers";
 import ReportedContentsSection from "../ReportedContentsSection";
 import { ParloPageProps } from "@type/other";

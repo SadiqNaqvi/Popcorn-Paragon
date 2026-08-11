@@ -1,10 +1,10 @@
-import { getSession, storeSession } from "@lib/auth/session";
-import { generateToken } from "@lib/auth/token";
-import { setCookies } from "@lib/auth/cookies";
-import { getHandler, updateHandler } from "@lib/helpers/handlers";
-import { currentUserPipeline } from "@lib/pipelines";
-import { userUpdateSchema } from "@lib/schemas";
-import { calculateAge } from "@lib/utils";
+import { getSession, storeSession } from "@lib/backend/auth/session";
+import { generateToken } from "@lib/backend/auth/token";
+import { setCookies } from "@lib/backend/auth/cookies";
+import { getHandler, updateHandler } from "@lib/backend/helpers/handlers";
+import { currentUserPipeline } from "@lib/backend/helpers/pipelines";
+import { userUpdateSchema } from "@lib/shared/validation/schemas";
+import { calculateAge } from "@lib/shared/utils";
 import { User } from "@model";
 import { UserModelType } from "@type/models";
 import { UserUpdateSchemaType } from "@type/schemas";

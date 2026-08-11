@@ -3,10 +3,11 @@
 import { AddIcon, GlobeIcon, LeftChevron, MegaIcon, VimeoIcon, XmarkIcon, YoutubeIcon } from "@assets/Icons";
 import BottomSheet, { BottomSheetRef, NestedSheet } from "@components/BottomSheet";
 import { Button, OptionalChildren } from "@components/ui";
-import { mediaInputConfig, mediaUrlPattern, numberOfFrames, vimeoLinkPattern, youtubeLinkPattern } from "@lib/constants";
-import { convertByteIntoSize, createThumbHash, getVideoDurationAndThumbnail, scaleImage } from "@lib/helpers/media";
-import appToast from "@lib/providers/toast";
-import { fileSchema, megaFileSchema, urlSchema } from "@lib/schemas";
+import { mediaInputConfig, mediaUrlPattern, numberOfFrames, vimeoLinkPattern, youtubeLinkPattern } from "@lib/shared/constants";
+import { convertByteIntoSize, getVideoDurationAndThumbnail, scaleImage } from "@lib/frontend/helpers/media";
+import { createThumbHash } from "@lib/shared/helpers/thumb_hash";
+import appToast from "@lib/frontend/providers/appToast";
+import { fileSchema, megaFileSchema, urlSchema } from "@lib/shared/validation/schemas";
 import { Frame } from "@type/internal";
 import { InputManagerType, TypedFunction } from "@type/other";
 import { ExtMediaSource, InputFrame } from "@type/schemas";

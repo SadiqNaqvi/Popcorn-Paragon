@@ -1,6 +1,6 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { usersAggregationPipeline } from "@lib/pipelines";
-import { getSearchParams } from "@lib/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { usersAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { getSearchParams } from "@lib/backend/utils";
 import { Member } from "@model";
 
 // Get all the members of a thread

@@ -1,6 +1,6 @@
-import { postHandler } from "@lib/helpers/handlers";
-import { addItemsInShelf } from "@lib/helpers/server";
-import { Taleon, Shelf, ShelfItem } from "@model";
+import { addItemsInShelf } from "@lib/backend/utils";
+import { postHandler } from "@lib/backend/helpers/handlers";
+import { Shelf } from "@model";
 import Collaborator from "@model/collaborators";
 import { TaleonSchemaType } from "@type/schemas";
 

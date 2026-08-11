@@ -4,7 +4,7 @@ import { EditIcon } from "@assets/Icons";
 import BottomSheet, { BottomSheetRef } from "@components/BottomSheet";
 import OptionMenu from "@components/OptionMenu";
 import OptionList, { NestedSheetTrigger } from "@components/ui/OptionList";
-import { useCustomReducer } from "@lib/hooks";
+import { useCustomReducer } from "@lib/frontend/hooks";
 import { InputManagerType } from "@type/other";
 import { InputFrame } from "@type/schemas";
 import Image from "next/image";

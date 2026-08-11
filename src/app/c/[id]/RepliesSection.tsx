@@ -4,9 +4,9 @@ import { InfiniteScroller } from "@components";
 import CommentInput from "@components/CommentInput";
 import { CommentSectionSkeleton } from "@components/ui/loading";
 import { CommentBar } from "@components/ui";
-import { getCommentById, getRepliesOnComment } from "@lib/helpers/common";
-import { useQueryHook } from "@lib/hooks";
-import { getQueryKeys } from "@lib/utils";
+import { getCommentById, getRepliesOnComment } from "@lib/shared/helpers/internal_fetchers";
+import { useQueryHook } from "@lib/frontend/hooks";
+import { getQueryKeys } from "@lib/shared/utils";
 import { FullComment } from "@type/internal";
 import useCurrentUser from "@store/user";
 

@@ -1,7 +1,7 @@
-import { filterToSort } from "@lib/constants";
-import { getHandler } from "@lib/helpers/handlers";
-import { threadsAggregationPipeline } from "@lib/pipelines";
-import { getSearchParams } from "@lib/utils";
+import { filterToSort } from "@lib/shared/constants";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { threadsAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { getSearchParams } from "@lib/backend/utils";
 import { Thread } from "@model";
 import { NextRequest } from "next/server";
 

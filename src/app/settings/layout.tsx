@@ -1,5 +1,5 @@
 import LoginModal from "@components/fallbacks/LoginModal";
-import { getUserFromToken } from "@lib/auth/utils";
+import { getUserFromToken } from "@lib/backend/utils";
 import type { Metadata } from "next";
 import { cookies } from "next/headers";
 

@@ -1,6 +1,6 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { usersAggregationPipeline } from "@lib/pipelines";
-import { getPageParams, } from "@lib/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { usersAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { getPageParams } from "@lib/backend/utils";
 import { Connection } from "@model";
 
 // Get followers of the current user

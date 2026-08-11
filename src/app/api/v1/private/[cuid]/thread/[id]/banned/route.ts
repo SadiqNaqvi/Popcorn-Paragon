@@ -1,8 +1,8 @@
-import { blockOrBanLimit } from "@lib/constants";
-import { getHandler, postHandler, updateHandler } from "@lib/helpers/handlers";
-import { usersAggregationPipeline } from "@lib/pipelines";
-import { createArrayOfUidsSchema } from "@lib/schemas";
-import { getPageParams } from "@lib/utils";
+import { blockOrBanLimit } from "@lib/shared/constants";
+import { getHandler, postHandler, updateHandler } from "@lib/backend/helpers/handlers";
+import { usersAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { createArrayOfUidsSchema } from "@lib/shared/validation/schemas";
+import { getPageParams } from "@lib/backend/utils";
 import { Member, Thread } from "@model";
 
 const schema = createArrayOfUidsSchema(blockOrBanLimit);

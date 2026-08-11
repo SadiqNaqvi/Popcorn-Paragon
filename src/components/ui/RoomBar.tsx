@@ -1,6 +1,6 @@
 import { BellSlashIcon } from "@assets/Icons";
 import Navigate from "@components/Navigate";
-import { timeAgo } from "@lib/utils";
+import { timeAgo } from "@lib/shared/utils";
 import useRoomStore from "@store/roomStore";
 import useCurrentUser from "@store/user";
 import { MereRoomType } from "@type/internal";

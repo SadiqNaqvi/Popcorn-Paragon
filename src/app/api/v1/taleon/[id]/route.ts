@@ -1,4 +1,4 @@
-import { getHandler, postHandler, updateHandler } from "@lib/helpers/handlers";
+import { getHandler, postHandler, updateHandler } from "@lib/backend/helpers/handlers";
 import { Taleon } from "@model";
 import { TaleonSchemaType } from "@type/schemas";
 
@@ -17,14 +17,10 @@ export const POST = postHandler<TaleonSchemaType>({
 
     const { id } = params;
 
-    console.log("about to store taleon");
-
-    const taleonDoc = await Taleon.insertOne(
-      { ...data, editedAt: Date.now() },
+    const taleonDoc = await Taleon.create(
+      [{ ...data, editedAt: Date.now() }],
       { session }
     );
-
-    console.log(taleonDoc);
 
     if (!taleonDoc) return {
       success: false, errCode: "data_storing_fail"
@@ -40,7 +36,7 @@ export const POST = postHandler<TaleonSchemaType>({
   skipUserCheck: true,
 });
 
-// Update taleon every 3 days
+// Update taleon every 5 days
 export const PATCH = updateHandler<TaleonSchemaType>({
   handler: async ({ data, params, session }) => {
 

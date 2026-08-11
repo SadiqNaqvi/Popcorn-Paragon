@@ -1,11 +1,11 @@
-import { availablePostCategories } from "@lib/constants";
-import { getPostsOfThread } from "@lib/helpers/common";
-import { prefetchInfiniteQuery } from "@lib/providers/queryClient";
+import { availablePostCategories } from "@lib/shared/constants";
+import { getPostsOfThread } from "@lib/shared/helpers/internal_fetchers";
+import { prefetchInfiniteQuery } from "@lib/backend/providers/queryClient";
 import {
   getQueryKeys,
   isValidParloId,
   refineSearchParams
-} from "@lib/utils";
+} from "@lib/shared/utils";
 import { QueryClient } from "@tanstack/react-query";
 
 export const contentFetcher = async ({

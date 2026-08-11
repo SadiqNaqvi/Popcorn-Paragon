@@ -1,5 +1,5 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { convertMatchToLookupExpr, shelfProjection } from "@lib/pipelines";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { convertMatchToLookupExpr, shelfProjection } from "@lib/backend/helpers/pipelines";
 import { User } from "@model";
 
 // Get User by username

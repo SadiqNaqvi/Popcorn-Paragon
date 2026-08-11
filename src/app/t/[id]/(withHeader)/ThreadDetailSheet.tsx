@@ -1,7 +1,7 @@
 import { RightChevron } from "@assets/Icons";
 import { Navigate } from "@components";
 import { LinksSection, OptionalChildren } from "@components/ui";
-import { numberConverter, timeAgo } from "@lib/utils";
+import { numberConverter, timeAgo } from "@lib/shared/utils";
 import { Thread } from "@type/internal";
 import { PropsWithChildren } from "react";
 

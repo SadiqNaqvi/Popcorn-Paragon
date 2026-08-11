@@ -1,9 +1,9 @@
 import LoginModal from "@components/fallbacks/LoginModal";
 import { NotFound, ShowError } from "@components/fallbacks";
-import { getUserFromToken } from "@lib/auth/utils";
-import { getCollaboratorsOfShelf, getFollowers } from "@lib/helpers/common";
-import { fetchQuery, getQueryClient, prefetchInfiniteQuery } from "@lib/providers/queryClient";
-import { getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { getCollaboratorsOfShelf, getFollowers } from "@lib/shared/helpers/internal_fetchers";
+import { fetchQuery, getQueryClient, prefetchInfiniteQuery } from "@lib/backend/providers/queryClient";
+import { getQueryKeys } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { ShelfCollaborators } from "@type/internal";
 import { cookies } from "next/headers";

@@ -1,6 +1,6 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { threadsAggregationPipeline } from "@lib/pipelines";
-import { getPageParams } from "@lib/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { threadsAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { getPageParams } from "@lib/backend/utils";
 import { Thread } from "@model";
 
 // Get all the threads created by the current user.

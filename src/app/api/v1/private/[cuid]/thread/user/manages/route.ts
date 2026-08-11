@@ -1,6 +1,6 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { threadsAggregationPipeline } from "@lib/pipelines";
-import { getPageParams } from "@lib/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { threadsAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { getPageParams } from "@lib/backend/utils";
 import { Member } from "@model";
 
 // Get all the threads manage by the current user.

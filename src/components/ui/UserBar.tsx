@@ -1,7 +1,7 @@
 import Navigate from "@components/Navigate";
 import { MereUser } from "@type/internal";
 import { MetadataTile, MetadataTileContainer, ParloImage } from "./";
-import { numberConverter } from "@lib/utils";
+import { numberConverter } from "@lib/shared/utils";
 
 export const SimpleUserBar = ({ profile, username, followers, posts }: MereUser) => (
     <article className="flex items-center gap-2 py-2">

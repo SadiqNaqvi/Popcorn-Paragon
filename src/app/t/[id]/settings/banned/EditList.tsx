@@ -2,10 +2,10 @@
 import { CheckIcon } from "@assets/Icons";
 import { ListSelector, ListSelectorRef, Navbar } from "@components";
 import { Button } from "@components/ui";
-import { blockOrBanLimit } from "@lib/constants";
-import { searchBannedMembers, searchMembers } from "@lib/helpers/common";
-import { banMembersMutation, unbanMembersMutation } from "@lib/helpers/mutations";
-import { getQueryKeys } from "@lib/utils";
+import { blockOrBanLimit } from "@lib/shared/constants";
+import { searchBannedMembers, searchMembers } from "@lib/shared/helpers/internal_fetchers";
+import { banMembersMutation, unbanMembersMutation } from "@lib/frontend/helpers/mutations";
+import { getQueryKeys } from "@lib/shared/utils";
 import { MereUser } from "@type/internal";
 import { TypedFunction } from "@type/other";
 import { useRef } from "react";

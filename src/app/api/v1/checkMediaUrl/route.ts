@@ -1,7 +1,6 @@
-import { oneDayInSeconds } from "@lib/constants";
-import { binaryToBase64 } from "@lib/helpers/media";
+import { oneDayInSeconds } from "@lib/shared/constants";
+import { binaryToBase64 } from "@lib/shared/helpers/thumb_hash";
 import { Frame } from "@type/internal";
-import { InputFrame } from "@type/schemas";
 import { NextRequest, NextResponse } from "next/server";
 import sharp from "sharp";
 import { rgbaToThumbHash } from "thumbhash";
@@ -95,8 +94,6 @@ const validateMediaUrls = async (source: string, path: string, searchParams: URL
             headers: { range: "bytes=0-100" }
         });
 
-        console.log(resp);
-
         if (resp.ok) {
 
             const headers = new Headers(resp.headers);
@@ -130,7 +127,6 @@ const validateMediaUrls = async (source: string, path: string, searchParams: URL
 
         } else {
             const response = await resp.text();
-            console.log(response);
         }
     } else if (source === "youtube") {
         const resp = await fetch(`https://youtube.com/oembed?url=${encodeURIComponent(path)}&format=json`)

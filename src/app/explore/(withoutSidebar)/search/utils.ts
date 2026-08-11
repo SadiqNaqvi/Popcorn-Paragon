@@ -1,6 +1,6 @@
 
-import { searchAllContent, searchCollection, searchCompany, searchMovie, searchPerson, searchShow } from "@lib/contentFetcher";
-import { searchComments, searchPosts, searchShelves, searchThreads, searchUsers } from "@lib/helpers/common";
+import { searchAllContent, searchCollection, searchCompany, searchMovie, searchPerson, searchShow } from "@lib/shared/helpers/external_fetchers";
+import { searchComments, searchPosts, searchShelves, searchThreads, searchUsers } from "@lib/shared/helpers/internal_fetchers";
 
 export const getQueryFnForSearch = (tab: string, nsfw: boolean) => {
 

@@ -4,8 +4,8 @@ import { LeftChevron, SearchIcon } from "@assets/Icons";
 import { Form, Input } from "@components/form";
 import Navigate from "@components/Navigate";
 import { Button } from "@components/ui";
-import { searchFilters } from "@lib/constants";
-import { useChageSearchParams, useSearchHistoryStack } from "@lib/hooks";
+import { searchFilters } from "@lib/shared/constants";
+import { useChageSearchParams, useSearchHistoryStack } from "@lib/frontend/hooks";
 import { SearchHistoryStackType } from "@type/other";
 
 const SearchHeader = ({ filter }: { filter: string }) => {

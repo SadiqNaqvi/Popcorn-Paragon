@@ -1,8 +1,8 @@
 import TaleonWikiHeader, { TaleonWikiSection } from "@app/explore/(withoutSidebar)/components/TaleonWikiPage";
 import { ArtistCard, ParloFooter, VerticleMovieCard } from "@components/ui";
 import { NotFound } from "@components/fallbacks";
-import { fetchSeasonForShow, fetchShow } from "@lib/contentFetcher";
-import { makeUrlSafe } from "@lib/utils";
+import { fetchSeasonForShow, fetchShow } from "@lib/shared/helpers/external_fetchers";
+import { makeUrlSafe } from "@lib/shared/utils";
 import { Metadata } from "next";
 
 type Params = { id: string, season: string };

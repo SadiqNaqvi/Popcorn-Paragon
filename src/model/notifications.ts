@@ -1,5 +1,5 @@
-import { oneWeekInSeconds } from "@lib/constants";
-import { parloId } from "@lib/utils";
+import { oneWeekInSeconds } from "@lib/shared/constants";
+import { parloId } from "@lib/shared/utils";
 import { NotificationModelType } from "@type/models";
 import type { StrictModel } from "@type/mongoose";
 import { model, models, Schema, StrictSchema } from "@type/mongoose";

@@ -1,4 +1,4 @@
-import { getHandler } from "@lib/helpers/handlers";
+import { getHandler } from "@lib/backend/helpers/handlers";
 import Room from "@model/rooms";
 
 // Check if there is a room with the requested user and the current user.

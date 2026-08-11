@@ -3,8 +3,8 @@
 import { InfiniteScroller } from "@components";
 import { PostBar } from "@components/ui";
 import { PostListSkeleton } from "@components/ui/loading";
-import { getQuotesOfPost } from "@lib/helpers/common";
-import { getQueryKeys } from "@lib/utils";
+import { getQuotesOfPost } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys } from "@lib/shared/utils";
 
 const QuoteSection = ({ id, page, allowNsfw }: { id: string, page: number, allowNsfw: boolean }) => {
 

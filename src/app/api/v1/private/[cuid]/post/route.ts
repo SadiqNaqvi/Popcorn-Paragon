@@ -1,12 +1,12 @@
-import { extMediaSource, parloculaAppURL } from "@lib/constants";
-import { postHandler, PrecheckFunction } from "@lib/helpers/handlers";
-import { sendNotification } from "@lib/helpers/server";
-import { convertMatchToLookupExpr, getFollowersToNotify, getMembersToNotify } from "@lib/pipelines";
-import { postSchemaServer } from "@lib/schemas";
-import { createArray } from "@lib/utils";
+import { sendNotification } from "@lib/backend/actions/notification";
+import { postHandler, PrecheckFunction } from "@lib/backend/helpers/handlers";
+import { convertMatchToLookupExpr, getFollowersToNotify, getMembersToNotify } from "@lib/backend/helpers/pipelines";
+import { parloculaAppURL } from "@lib/shared/constants";
+import { createArray } from "@lib/shared/utils";
+import { postSchemaServer } from "@lib/shared/validation/schemas";
 import { Post, Thread, User } from "@model";
-import { PostSchemaType } from "@type/schemas";
 import type { PipelineStage } from "@type/mongoose";
+import { PostSchemaType } from "@type/schemas";
 
 // Checking if the current user is a member of the thread and if user is blocked by the author of the quoted post.
 const preCheck: PrecheckFunction<PostSchemaType> = async ({ user_id, data }) => {

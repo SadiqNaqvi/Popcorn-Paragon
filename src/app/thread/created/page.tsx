@@ -1,10 +1,10 @@
 import { Navbar } from "@components";
 import LoginModal from "@components/fallbacks/LoginModal";
-import { getUserFromToken } from "@lib/auth/utils";
-import { createdThreadsOfUser } from "@lib/helpers/common";
-import { getQueryClient, prefetchInfiniteQuery } from "@lib/providers/queryClient";
-import generateDynamicMetadata from "@lib/seo/metadata";
-import { getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { createdThreadsOfUser } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryClient, prefetchInfiniteQuery } from "@lib/backend/providers/queryClient";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
+import { getQueryKeys } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { ParloPageProps } from "@type/other";
 import { cookies } from "next/headers";

@@ -1,8 +1,8 @@
 import ThreadMutation from "@components/form/Mutation/ThreadMutation";
-import { getUserFromToken } from "@lib/auth/utils";
-import { getThreadById } from "@lib/helpers/common";
-import { fetchQuery, getQueryClient } from "@lib/providers/queryClient";
-import { getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { getThreadById } from "@lib/shared/helpers/internal_fetchers";
+import { fetchQuery, getQueryClient } from "@lib/backend/providers/queryClient";
+import { getQueryKeys } from "@lib/shared/utils";
 import { ParloPageProps } from "@type/other";
 import { cookies } from "next/headers";
 

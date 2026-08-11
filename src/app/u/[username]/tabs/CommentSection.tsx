@@ -3,8 +3,8 @@
 import { InfiniteScroller } from "@components";
 import { CommentBarWithoutReply } from "@components/ui";
 import { CommentSectionSkeleton } from "@components/ui/loading";
-import { getCommentsOfUser } from "@lib/helpers/common";
-import { getQueryKeys } from "@lib/utils";
+import { getCommentsOfUser } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys } from "@lib/shared/utils";
 import useCurrentUser from "@store/user";
 
 type Props = {

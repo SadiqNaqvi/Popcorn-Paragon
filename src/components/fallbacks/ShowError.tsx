@@ -3,7 +3,7 @@
 import { ErrorFaceIcon } from "@assets/Icons";
 import Navbar from "@components/Navbar";
 import { Button, OptionalChildren } from "@components/ui";
-import { codetoError } from "@lib/utils";
+import { codetoError } from "@lib/shared/utils";
 import { ErrorCodes } from "@type/other";
 import { twMerge } from "tailwind-merge";
 

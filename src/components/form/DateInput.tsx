@@ -1,5 +1,5 @@
-import appToast from "@lib/providers/toast";
-import { dobSchema } from "@lib/schemas";
+import appToast from "@lib/frontend/providers/appToast";
+import { dobSchema } from "@lib/shared/validation/schemas";
 import { GenericDate } from "@type/internal";
 import React, { useImperativeHandle, useRef } from "react";
 

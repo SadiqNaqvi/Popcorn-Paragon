@@ -1,12 +1,12 @@
-import { getUserFromToken } from "@lib/auth/utils";
-import { getTrendingPosts, getUserFeed } from "@lib/helpers/common";
-import { getQueryClient, prefetchInfiniteQuery } from "@lib/providers/queryClient";
-import { createArray, getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { getTrendingPosts, getUserFeed } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryClient, prefetchInfiniteQuery } from "@lib/backend/providers/queryClient";
+import { createArray, getQueryKeys } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { ParloPageProps } from "@type/other";
 import { cookies } from "next/headers";
 import FeedPage from "./FeedPage";
-import generateDynamicMetadata from "@lib/seo/metadata";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
 
 export const metadata = generateDynamicMetadata({
     title: "Home",

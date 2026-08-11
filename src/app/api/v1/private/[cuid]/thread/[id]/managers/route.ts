@@ -1,7 +1,7 @@
-import { threadManagersLimit } from "@lib/constants";
-import { getHandler, postHandler, PrecheckResponse, updateHandler } from "@lib/helpers/handlers";
-import { sendNotification } from "@lib/helpers/server";
-import { createArrayOfUidsSchema } from "@lib/schemas";
+import { threadManagersLimit } from "@lib/shared/constants";
+import { getHandler, postHandler, PrecheckResponse, updateHandler } from "@lib/backend/helpers/handlers";
+import { sendNotification } from "@lib/backend/actions/notification";
+import { createArrayOfUidsSchema } from "@lib/shared/validation/schemas";
 import { Member, Notification, Thread } from "@model";
 import { ModeratorType } from "@type/internal";
 

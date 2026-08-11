@@ -1,10 +1,10 @@
 // Sharing a content to different rooms
 
-import { postHandler } from "@lib/helpers/handlers";
-import { checkIfParticipantExistsInMultipleRooms, getParticipantsOfRooms, handleNewMessages } from "@lib/helpers/redis/messaging";
-import { sendNotificationForMessage } from "@lib/helpers/server";
-import { sharedContentSchema } from "@lib/schemas";
-import { getPoster, parloId } from "@lib/utils";
+import { postHandler } from "@lib/backend/helpers/handlers";
+import { checkIfParticipantExistsInMultipleRooms, getParticipantsOfRooms, handleNewMessages } from "@lib/backend/redis/messaging";
+import { sendNotificationForMessage } from "@lib/backend/actions/notification";
+import { sharedContentSchema } from "@lib/shared/validation/schemas";
+import { getPoster, parloId } from "@lib/shared/utils";
 import { MessageModelType } from "@type/models";
 import { SharedContentSchemaType } from "@type/schemas";
 
@@ -25,10 +25,8 @@ export const POST = postHandler<SharedContentSchemaType>({
             _id: parloId(),
         }));
 
-        console.log("handlingNewMessage")
         await handleNewMessages(data.rooms, messages);
 
-        console.log("Sending Notifications");
         await Promise.all(messages.map(
             (message, i) => sendNotificationForMessage(
                 participants[i]?.filter(p => !(p.type === "invitee" || p.uid === user_id)).map(p => p.uid) || [],

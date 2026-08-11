@@ -1,7 +1,7 @@
 "use client";
 
-import { useQueryHook } from "@lib/hooks";
-import { isValidParloId } from "@lib/utils";
+import { useQueryHook } from "@lib/frontend/hooks";
+import { isValidParloId } from "@lib/shared/utils";
 import useCurrentUser from "@store/user";
 import { GeneralGetReturn } from "@type/internal";
 import { ErrorCodes } from "@type/other";

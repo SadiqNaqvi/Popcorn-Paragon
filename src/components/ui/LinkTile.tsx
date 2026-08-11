@@ -1,7 +1,7 @@
 import { LinkIcon, RightChevron } from "@assets/Icons"
 import BottomSheet from "@components/BottomSheet"
 import Navigate from "@components/Navigate"
-import { parloculaAppURL } from "@lib/constants"
+import { parloculaAppURL } from "@lib/shared/constants"
 import { Link as LinkType } from "@type/internal"
 import Link from "next/link"
 

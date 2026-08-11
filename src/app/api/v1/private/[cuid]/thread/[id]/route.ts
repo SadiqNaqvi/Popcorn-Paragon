@@ -1,7 +1,7 @@
-import { parloculaAppURL } from "@lib/constants";
-import { updateHandler } from "@lib/helpers/handlers";
-import { sendNotification } from "@lib/helpers/server";
-import { threadUpdateSchema } from "@lib/schemas";
+import { parloculaAppURL } from "@lib/shared/constants";
+import { updateHandler } from "@lib/backend/helpers/handlers";
+import { sendNotification } from "@lib/backend/actions/notification";
+import { threadUpdateSchema } from "@lib/shared/validation/schemas";
 import { Member, Thread } from "@model";
 import { ThreadUpdateSchema } from "@type/schemas";
 

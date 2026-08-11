@@ -3,8 +3,8 @@
 import { ThumbUpIcon, ThumbUpIconFill } from "@assets/Icons";
 import { Button } from "@components/ui";
 import UserBasedButton, { UserBasedButtonProps } from "@components/UserBasedButton";
-import { checkLikeOnComment } from "@lib/helpers/common";
-import { getQueryKeys, numberConverter } from "@lib/utils";
+import { checkLikeOnComment } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys, numberConverter } from "@lib/shared/utils";
 
 const NoUserStateButton = ({ count }: { count: number }) => (
     <>

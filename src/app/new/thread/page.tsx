@@ -1,7 +1,7 @@
 import { ThreadMutation } from "@components/form/Mutation";
-import { getUserFromToken } from "@lib/auth/utils";
-import { fetchMovie, fetchPerson, fetchShow } from "@lib/contentFetcher";
-import generateDynamicMetadata from "@lib/seo/metadata";
+import { getUserFromToken } from "@lib/backend/utils";
+import { fetchMovie, fetchPerson, fetchShow } from "@lib/shared/helpers/external_fetchers";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
 import { ThreadConnection } from "@type/internal";
 import { ParloPageProps } from "@type/other";
 import { cookies } from "next/headers";

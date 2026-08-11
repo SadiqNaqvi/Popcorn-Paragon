@@ -2,8 +2,8 @@ import { BottomSheet } from "@components";
 import { BlogHeading3, BlogSubSection } from "@components/blog";
 import { Form, Input } from "@components/form";
 import { Button } from "@components/ui";
-import { deactivateAccount } from "@lib/helpers/mutations";
-import { getTimeInFuture } from "@lib/utils";
+import { deactivateAccount } from "@lib/frontend/helpers/mutations";
+import { getTimeInFuture } from "@lib/shared/utils";
 import { useRouter } from "next/navigation";
 import { z } from "zod";
 

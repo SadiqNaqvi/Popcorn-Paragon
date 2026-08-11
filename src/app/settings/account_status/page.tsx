@@ -1,6 +1,6 @@
 import { Navbar } from "@components";
 import { OptionalChildren, ParloImage } from "@components/ui";
-import { getUserFromToken } from "@lib/auth/utils";
+import { getUserFromToken } from "@lib/backend/utils";
 import { GenericDate } from "@type/internal";
 import { cookies } from "next/headers";
 

@@ -4,7 +4,7 @@ import { BottomSheet, Navbar } from "@components";
 import { Form, Input } from "@components/form";
 import { Button } from "@components/ui";
 import { FullPageLoadingSpinner } from "@components/ui/loading/LoadingSpinner";
-import { deactivateAccount } from "@lib/helpers/mutations";
+import { deactivateAccount } from "@lib/frontend/helpers/mutations";
 import useCurrentUser from "@store/user";
 import { useRouter } from "next/navigation";
 import { z } from "zod";

@@ -2,10 +2,10 @@
 
 import { AppIcon } from '@assets/Icons';
 import { Navigate } from '@components';
-import { authenticateUser } from '@lib/helpers/server';
-import { logOutOnClient, setUserOnRefreshOrLogin } from '@lib/helpers/user';
-import { getQueryClient } from '@lib/providers/queryClient';
-import { getQueryKeys, getTimeInFuture } from '@lib/utils';
+import { authenticateUser } from '@lib/backend/actions/auth';
+import { logOutOnClient, setUserOnRefreshOrLogin } from '@lib/frontend/helpers/user';
+import { getQueryClient } from '@lib/backend/providers/queryClient';
+import { getQueryKeys, getTimeInFuture } from '@lib/shared/utils';
 import useCurrentUser from '@store/user';
 import { CurrentUser, TokenPayload } from '@type/internal';
 import { usePathname, useRouter } from 'next/navigation';

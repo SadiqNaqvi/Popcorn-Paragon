@@ -1,7 +1,7 @@
 "use client";
 
-import { fetchMoviesWithCast, fetchMoviesWithCompany, fetchMoviesWithGenres, fetchMoviesWithYear, fetchShowsWithGenres, fetchSimilarMovies, fetchSimilarShows, fetchTrendingMovies, fetchTrendingShows } from "@lib/contentFetcher";
-import { useQueryHook } from "@lib/hooks";
+import { fetchMoviesWithCast, fetchMoviesWithCompany, fetchMoviesWithGenres, fetchMoviesWithYear, fetchShowsWithGenres, fetchSimilarMovies, fetchSimilarShows, fetchTrendingMovies, fetchTrendingShows } from "@lib/shared/helpers/external_fetchers";
+import { useQueryHook } from "@lib/frontend/hooks";
 import { RefinedGeneralData } from "@type/external";
 import { GeneralGetReturn } from "@type/internal";
 import { useEffect, useRef, useState } from "react";

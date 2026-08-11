@@ -1,6 +1,6 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { shelvesAggregationPipeline } from "@lib/pipelines";
-import { getSearchParams } from "@lib/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { shelvesAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { getSearchParams } from "@lib/backend/utils";
 import { Shelf } from "@model";
 
 // Get all the custom shelves of user (private + public)

@@ -1,7 +1,8 @@
-import { allReasonsToReport } from "@lib/constants";
-import { getHandler } from "@lib/helpers/handlers";
-import { createPipeline } from "@lib/pipelines";
-import { capitalize, getSearchParams } from "@lib/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { createPipeline } from "@lib/backend/helpers/pipelines";
+import { getSearchParams } from "@lib/backend/utils";
+import { allReasonsToReport } from "@lib/shared/constants";
+import { capitalize } from "@lib/shared/utils";
 import { Member } from "@model";
 import Report from "@model/reports";
 import { ReportedContentEnum } from "@type/internal";

@@ -3,7 +3,7 @@
 import { InfiniteScroller } from "@components";
 import { PostBar, SearchTile, ShelfBar, ThreadTile, UserBar } from "@components/ui";
 import { PostListSkeleton, SearchResultSkeletonList, ShelfBarListSkeleton, ThreadListSkeleton, UserBarSkeletonList } from "@components/ui/loading";
-import { searchFilters } from "@lib/constants";
+import { searchFilters } from "@lib/shared/constants";
 import useCurrentUser from "@store/user";
 import { useSearchParams } from "next/navigation";
 import SearchHeader from "./SearchHeader";

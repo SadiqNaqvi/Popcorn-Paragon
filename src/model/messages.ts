@@ -1,5 +1,5 @@
-import { oneDayInSeconds } from "@lib/constants";
-import { parloId } from "@lib/utils";
+import { oneDayInSeconds } from "@lib/shared/constants";
+import { parloId } from "@lib/shared/utils";
 import { MessageModelType } from "@type/models";
 import type { StrictModel } from "@type/mongoose";
 import { model, models, StrictSchema } from "@type/mongoose";

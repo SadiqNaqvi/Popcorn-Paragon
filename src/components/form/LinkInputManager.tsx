@@ -4,7 +4,7 @@
 import { AddIcon, LinkIcon, XmarkIcon } from "@assets/Icons";
 import BottomSheet, { BottomSheetRef } from "@components/BottomSheet";
 import { Button, OptionalChildren } from "@components/ui";
-import { linkSchema } from "@lib/schemas";
+import { linkSchema } from "@lib/shared/validation/schemas";
 import { InputManagerType, TypedFunction } from "@type/other";
 import { LinkSchema } from "@type/schemas";
 import { useImperativeHandle, useState } from "react";

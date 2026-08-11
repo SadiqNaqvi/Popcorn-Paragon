@@ -1,6 +1,6 @@
 import { ShowError } from "@components/fallbacks";
-import { getUserFromToken } from "@lib/auth/utils";
-import { calculateAge } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { calculateAge } from "@lib/shared/utils";
 import { cookies } from "next/headers";
 import FilterContentTogglePage from "./FilterContent";
 

@@ -1,7 +1,7 @@
 "use client";
 
-import { useQueryHook } from "@lib/hooks";
-import { AvailableMutations, MutationFunctionAgruments, performMutation, setMutation } from "@lib/providers/mutationStore";
+import { useQueryHook } from "@lib/frontend/hooks";
+import { AvailableMutations, MutationFunctionAgruments, performMutation, setMutation } from "@lib/frontend/providers/mutationStore";
 import { useQueryClient } from "@tanstack/react-query";
 import { ReactElement, useRef } from "react";
 import BottomSheet from "./BottomSheet";

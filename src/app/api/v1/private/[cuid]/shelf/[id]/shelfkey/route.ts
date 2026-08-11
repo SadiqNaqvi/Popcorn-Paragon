@@ -1,4 +1,4 @@
-import { updateHandler } from "@lib/helpers/handlers";
+import { updateHandler } from "@lib/backend/helpers/handlers";
 import { Shelf } from "@model";
 
 // Updating shelf key of the shelf

@@ -1,15 +1,15 @@
-import { getUserFromToken } from "@lib/auth/utils";
-import { checkIfItemSaved, getItems, getShelf, getShelfConnection } from "@lib/helpers/common";
-import { fetchInfiniteQuery, fetchQuery, getQueryClient, prefetchInfiniteQuery, prefetchQuery } from "@lib/providers/queryClient";
-import { createArray, getQueryKeys, isValidParloId, refineSearchParams } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { checkIfItemSaved, getItems, getShelf, getShelfConnection } from "@lib/shared/helpers/internal_fetchers";
+import { fetchInfiniteQuery, fetchQuery, getQueryClient, prefetchInfiniteQuery, prefetchQuery } from "@lib/backend/providers/queryClient";
+import { createArray, getQueryKeys, isValidParloId, refineSearchParams } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from '@tanstack/react-query';
 import { cookies } from "next/headers";
 import ShelfPage from "./ShelfPage";
 import { ParloPageProps } from "@type/other";
 import { Metadata } from "next";
 import JsonLd from "@components/JsonLd";
-import { generateJsonLdForShelf } from "@lib/seo/jsonld";
-import generateDynamicMetadata from "@lib/seo/metadata";
+import { generateJsonLdForShelf } from "@lib/shared/seo/jsonld";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
 
 export const generateMetadata = async ({ params, searchParams }: ParloPageProps): Promise<Metadata> => {
     const { id } = await params;

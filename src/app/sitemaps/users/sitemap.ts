@@ -1,7 +1,7 @@
-import { app_production_url } from "@lib/constants";
+import { app_production_url } from "@lib/shared/constants";
 import { User } from "@model";
 import { MetadataRoute } from "next";
-import { connectDatabase } from "@lib/database";
+import { connectDatabase } from "@lib/backend/providers/database";
 
 export const generateSitemaps = async () => {
     await connectDatabase();

@@ -30,7 +30,7 @@ import {
   threadUpdateSchema,
   usernameUpdateSchema,
   userUpdateSchema
-} from "@lib/schemas";
+} from "@lib/shared/validation/schemas";
 import { z } from "zod";
 import { CommentReplyType } from "./internal";
 import { UidsForReportReason } from "./other";

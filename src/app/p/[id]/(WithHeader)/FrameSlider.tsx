@@ -3,7 +3,7 @@
 import FancyCarousel from "@components/FancyCarousel";
 import { ParloVideo } from "@components/ui";
 import ParloImage from "@components/ui/ParloImage/ParloImage";
-import { getPoster } from "@lib/utils";
+import { getPoster } from "@lib/shared/utils";
 import { Frame } from "@type/internal";
 
 const className = "sm:rounded-md sm:border border-gray40 object-cover object-center size-full cursor-pointer";

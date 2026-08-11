@@ -1,7 +1,7 @@
-import { getUserFromToken } from "@lib/auth/utils";
-import { searchFilters } from "@lib/constants";
-import { getQueryClient, prefetchInfiniteQuery } from "@lib/providers/queryClient";
-import generateDynamicMetadata from "@lib/seo/metadata";
+import { getUserFromToken } from "@lib/backend/utils";
+import { searchFilters } from "@lib/shared/constants";
+import { getQueryClient, prefetchInfiniteQuery } from "@lib/backend/providers/queryClient";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { ParloPageProps } from "@type/other";
 import { cookies } from "next/headers";

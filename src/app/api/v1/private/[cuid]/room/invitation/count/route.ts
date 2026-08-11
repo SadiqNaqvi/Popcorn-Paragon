@@ -1,5 +1,5 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { getInvitationCount,setInvitationCount } from "@lib/helpers/redis/messaging";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { getInvitationCount,setInvitationCount } from "@lib/backend/redis/messaging";
 import { Participant } from "@model";
 
 export const GET = getHandler(async (r, params) => {

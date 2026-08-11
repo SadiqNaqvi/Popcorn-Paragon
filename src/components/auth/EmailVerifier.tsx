@@ -3,12 +3,12 @@
 import { Form, FormSubmitReturnType, Input, OTPInput } from "@components/form";
 import Navbar from "@components/Navbar";
 import { Button, LoadingSpinner, OptionalChildren } from "@components/ui";
-import generateFingerprint from "@lib/auth/fingerprint";
-import { sendVerificationCode } from "@lib/helpers/server";
-import { useCustomReducer } from "@lib/hooks";
-import appToast from "@lib/providers/toast";
-import { emailSchema, verifyCodeToLoginSchema } from "@lib/schemas";
-import { codetoError, getTimeInFuture } from "@lib/utils";
+import generateFingerprint from "@lib/frontend/auth/fingerprint";
+import { sendVerificationCode } from "@lib/backend/actions/email";
+import { useCustomReducer } from "@lib/frontend/hooks";
+import appToast from "@lib/frontend/providers/appToast";
+import { emailSchema, verifyCodeToLoginSchema } from "@lib/shared/validation/schemas";
+import { codetoError, getTimeInFuture } from "@lib/shared/utils";
 import { useMutation } from "@tanstack/react-query";
 import { useEffect, useRef, useState } from "react";
 import { z } from "zod";

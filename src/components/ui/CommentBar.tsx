@@ -1,6 +1,6 @@
 import { BookmarkIcon, ThumbUpIcon } from "@assets/Icons";
 import { Navigate, NavigateComponentProps } from "@components";
-import { numberConverter, timeAgo } from "@lib/utils";
+import { numberConverter, timeAgo } from "@lib/shared/utils";
 import useGlobalStore from "@store/globalStore";
 import { CurrentUser, MereComment, ReportedComment, ReportedContent } from "@type/internal";
 import { ReplyInputType } from "@type/schemas";

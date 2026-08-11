@@ -1,4 +1,4 @@
-import { deleteHandler } from "@lib/helpers/handlers";
+import { deleteHandler } from "@lib/backend/helpers/handlers";
 import { Connection, User } from "@model";
 
 // Removing a follower

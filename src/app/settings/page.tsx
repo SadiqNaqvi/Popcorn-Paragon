@@ -6,7 +6,7 @@ import { WarningSheet } from "@components/sheets";
 import { ParloFooter } from "@components/ui";
 import InstallPrompt from "@components/ui/InstallPrompt";
 import { FullPageLoadingSpinner } from "@components/ui/loading/LoadingSpinner";
-import { logoutUser } from "@lib/helpers/mutations";
+import { logoutUser } from "@lib/frontend/helpers/mutations";
 import useCurrentUser from "@store/user";
 import { useRouter } from "next/navigation";
 import { PropsWithChildren } from "react";

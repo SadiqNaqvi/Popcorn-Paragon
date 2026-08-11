@@ -1,6 +1,6 @@
-import { getMembers } from "@lib/helpers/common";
-import { getQueryClient, prefetchInfiniteQuery } from "@lib/providers/queryClient";
-import { getQueryKeys } from "@lib/utils";
+import { getMembers } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryClient, prefetchInfiniteQuery } from "@lib/backend/providers/queryClient";
+import { getQueryKeys } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import MembersList from "./MembersList";
 import { ParloPageProps } from "@type/other";

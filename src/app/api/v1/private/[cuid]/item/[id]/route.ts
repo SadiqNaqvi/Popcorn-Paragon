@@ -1,8 +1,8 @@
-import { filterToSort } from "@lib/constants";
-import { getHandler, postHandler } from "@lib/helpers/handlers";
-import { itemsAggregationPipeline } from "@lib/pipelines";
-import { taleonToAddAndRemove } from "@lib/schemas";
-import { getSearchParams } from "@lib/utils";
+import { filterToSort } from "@lib/shared/constants";
+import { getHandler, postHandler } from "@lib/backend/helpers/handlers";
+import { itemsAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { taleonToAddAndRemove } from "@lib/shared/validation/schemas";
+import { getSearchParams } from "@lib/backend/utils";
 import { Taleon, Shelf, ShelfItem } from "@model";
 import Collaborator from "@model/collaborators";
 import { ShelfModelType } from "@type/models";

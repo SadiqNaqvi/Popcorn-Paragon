@@ -2,9 +2,9 @@
 
 import { Navigate, BottomSheet } from "@components";
 import NewRoomSheet from "@components/sheets/NewRoomSheet";
-import { getRoomByUserId } from "@lib/helpers/common";
-import { useQueryHook } from "@lib/hooks";
-import { getQueryKeys } from "@lib/utils";
+import { getRoomByUserId } from "@lib/shared/helpers/internal_fetchers";
+import { useQueryHook } from "@lib/frontend/hooks";
+import { getQueryKeys } from "@lib/shared/utils";
 import useCurrentUser from "@store/user";
 import { Frame } from "@type/internal";
 

@@ -1,6 +1,6 @@
-import { deleteHandler, updateHandler } from "@lib/helpers/handlers";
-import { sendNotification } from "@lib/helpers/server";
-import { getPoster } from "@lib/utils";
+import { deleteHandler, updateHandler } from "@lib/backend/helpers/handlers";
+import { sendNotification } from "@lib/backend/actions/notification";
+import { getPoster } from "@lib/shared/utils";
 import { Notification, Shelf } from "@model";
 import Collaborator from "@model/collaborators";
 

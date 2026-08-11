@@ -1,5 +1,5 @@
-import { deleteRooms } from "@lib/helpers/deletion";
-import { deleteHandler, postHandler } from "@lib/helpers/handlers";
+import { deleteRooms } from "@lib/backend/helpers/deletion";
+import { deleteHandler, postHandler } from "@lib/backend/helpers/handlers";
 import { Connection, User } from "@model";
 
 // Blocking a user

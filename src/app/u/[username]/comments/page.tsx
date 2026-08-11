@@ -1,11 +1,11 @@
-import { getCommentsOfUser, getUserByUsername } from "@lib/helpers/common";
-import { fetchQuery, getQueryClient, prefetchInfiniteQuery } from "@lib/providers/queryClient";
-import { getQueryKeys, refineSearchParams } from "@lib/utils";
+import { getCommentsOfUser, getUserByUsername } from "@lib/shared/helpers/internal_fetchers";
+import { fetchQuery, getQueryClient, prefetchInfiniteQuery } from "@lib/backend/providers/queryClient";
+import { getQueryKeys, refineSearchParams } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import Comments from "../tabs/CommentSection";
 import FilterTiles from "@components/FilterTiles";
 import { cookies } from "next/headers";
-import { getUserFromToken } from "@lib/auth/utils";
+import { getUserFromToken } from "@lib/backend/utils";
 import { ParloPageProps } from "@type/other";
 
 const Page = async ({ params, searchParams }: ParloPageProps) => {

@@ -4,8 +4,8 @@ import { InfiniteScroller, Navbar, FilterTiles } from "@components"
 import { OptionalChildren } from "@components/ui";
 import { ShelfBarListSkeleton } from "@components/ui/loading";
 import ShelfBar from "@components/ui/ShelfBar";
-import { getAllShelvesOfUser, getPrivateShelvesOfUser, getShelvesAsCollaborator, getShelvesAsInvitee, getShelvesOfUser } from "@lib/helpers/common";
-import { getQueryKeys, refineSearchParams } from "@lib/utils";
+import { getAllShelvesOfUser, getPrivateShelvesOfUser, getShelvesAsCollaborator, getShelvesAsInvitee, getShelvesOfUser } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys, refineSearchParams } from "@lib/shared/utils";
 
 type ShelfListCategory = "all" | "public" | "private" | "collaborative" | "invited";
 

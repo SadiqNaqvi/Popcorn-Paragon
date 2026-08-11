@@ -1,10 +1,10 @@
 import { LoginModal } from "@components/fallbacks";
 import { ShelfMutation } from "@components/form/Mutation";
 import { NotFound, ShowError } from "@components/fallbacks";
-import { getUserFromToken } from "@lib/auth/utils";
-import { getItems, getShelf } from "@lib/helpers/common";
-import { fetchQuery, getQueryClient, prefetchInfiniteQuery } from "@lib/providers/queryClient";
-import { getQueryKeys, isValidParloId } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { getItems, getShelf } from "@lib/shared/helpers/internal_fetchers";
+import { fetchQuery, getQueryClient, prefetchInfiniteQuery } from "@lib/backend/providers/queryClient";
+import { getQueryKeys, isValidParloId } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from '@tanstack/react-query';
 import { ParloPageProps } from "@type/other";
 import { cookies } from "next/headers";

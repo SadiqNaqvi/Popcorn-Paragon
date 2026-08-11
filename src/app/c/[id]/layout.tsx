@@ -1,9 +1,9 @@
 import { NotFound } from "@components/fallbacks";
 import CommentPageSkeleton from "@components/ui/loading/CommentPageSkeleton";
-import { getUserFromToken } from "@lib/auth/utils";
-import { checkIfItemSaved, checkIfReportExists, checkLikeOnComment, getCommentById } from "@lib/helpers/common";
-import { fetchQuery, getQueryClient, prefetchQuery } from "@lib/providers/queryClient";
-import { calculateAge, getQueryKeys, isValidParloId } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { checkIfItemSaved, checkIfReportExists, checkLikeOnComment, getCommentById } from "@lib/shared/helpers/internal_fetchers";
+import { fetchQuery, getQueryClient, prefetchQuery } from "@lib/backend/providers/queryClient";
+import { calculateAge, getQueryKeys, isValidParloId } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { ParloPageProps } from "@type/other";
 import { Metadata } from "next";
@@ -11,8 +11,8 @@ import { cookies } from "next/headers";
 import { PropsWithChildren, Suspense } from "react";
 import CommentHeader from "./Header";
 import JsonLd from "@components/JsonLd";
-import { generateJsonLdForComment } from "@lib/seo/jsonld";
-import generateDynamicMetadata from "@lib/seo/metadata";
+import { generateJsonLdForComment } from "@lib/shared/seo/jsonld";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
 
 export const generateMetadata = async ({ params }: ParloPageProps): Promise<Metadata> => {
 

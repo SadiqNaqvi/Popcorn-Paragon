@@ -1,8 +1,8 @@
 "use client";
 
 import { BottomSheet, ListSelector, ListSelectorRef } from "@components";
-import { searchTaleonsOnly } from "@lib/contentFetcher";
-import { addItemsInShelf } from "@lib/helpers/mutations";
+import { searchTaleonsOnly } from "@lib/shared/helpers/external_fetchers";
+import { addItemsInShelf } from "@lib/frontend/helpers/mutations";
 import { ExtSearchDataTaleonOnly } from "@type/external";
 import { AllShelves } from "@type/models";
 import { useRef } from "react";

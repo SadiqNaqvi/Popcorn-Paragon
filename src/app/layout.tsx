@@ -3,12 +3,12 @@ import "@styles/tailwind.css";
 import "@styles/components.css";
 import { FancyBoxProvider } from "@components";
 import { MainLoading } from "@components/ui/loading";
-import { getUserFromToken } from "@lib/auth/utils";
-import { getCurrentUser, getNotificationsOfUser, getRooms } from "@lib/helpers/common";
-import { fetchQuery, getQueryClient, prefetchInfiniteQuery } from "@lib/providers/queryClient";
-import ReactQueryProvider from "@lib/providers/ReactQueryWrapper";
-import generateDynamicMetadata, { appViewport } from "@lib/seo/metadata";
-import { getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { getCurrentUser, getNotificationsOfUser, getRooms } from "@lib/shared/helpers/internal_fetchers";
+import { fetchQuery, getQueryClient, prefetchInfiniteQuery } from "@lib/backend/providers/queryClient";
+import ReactQueryProvider from "@components/ReactQueryWrapper";
+import generateDynamicMetadata, { appViewport } from "@lib/shared/seo/metadata";
+import { getQueryKeys } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { CurrentUser } from "@type/internal";
 import { ThemeProvider } from "next-themes";
@@ -17,7 +17,7 @@ import { PropsWithChildren, Suspense } from "react";
 import { Toaster } from "sonner";
 import UserHydrator from "./UserHydrator";
 import localFont from 'next/font/local'
-import { generateJsonLdForRoot } from "@lib/seo/jsonld";
+import { generateJsonLdForRoot } from "@lib/shared/seo/jsonld";
 
 const montserratFont = localFont({
   src: "./fonts/Montserrat.ttf",

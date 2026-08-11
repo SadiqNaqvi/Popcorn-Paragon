@@ -1,4 +1,4 @@
-import { deleteHandler, updateHandler } from "@lib/helpers/handlers";
+import { deleteHandler, updateHandler } from "@lib/backend/helpers/handlers";
 import { Member, Notification } from "@model";
 
 // Invitee accepts manager invitation

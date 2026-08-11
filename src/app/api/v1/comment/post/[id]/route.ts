@@ -1,7 +1,7 @@
-import { filterToSort } from "@lib/constants";
-import { getHandler } from "@lib/helpers/handlers";
-import { attachNsfwInPipeline, commentsAggregationPipelineWithReplies } from "@lib/pipelines";
-import { getSearchParams } from "@lib/utils";
+import { filterToSort } from "@lib/shared/constants";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { attachNsfwInPipeline, commentsAggregationPipelineWithReplies } from "@lib/backend/helpers/pipelines";
+import { getSearchParams } from "@lib/backend/utils";
 import { Comment } from "@model";
 
 // Get comments on a post

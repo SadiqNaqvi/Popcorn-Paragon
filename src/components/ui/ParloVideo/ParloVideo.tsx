@@ -3,8 +3,9 @@
 import { PlayIcon, VimeoIcon, YoutubeIcon } from "@assets/Icons";
 import { OptionalChildren, VideoPlayer } from "@components/ui";
 import { Fancybox } from "@fancyapps/ui";
-import { decodeHash, formatTimeAsDuration } from "@lib/helpers/media";
-import { addProxyForFrames } from "@lib/utils";
+import { formatTimeAsDuration } from "@lib/frontend/helpers/media";
+import { decodeHash } from "@lib/shared/helpers/thumb_hash";
+import { addProxyForFrames } from "@lib/shared/utils";
 import { Frame } from "@type/internal";
 import Image from "next/image";
 import { SyntheticEvent, useRef, useState } from "react";

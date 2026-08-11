@@ -5,10 +5,10 @@ import { DateInput, Form, Input } from "@components/form";
 import UserMutationPage from "@components/form/Mutation/UserMutation";
 import Navbar from "@components/Navbar";
 import { Button } from "@components/ui";
-import { isUsernameAvailable } from "@lib/helpers/common";
-import { useCustomReducer } from "@lib/hooks";
-import { usernameSchema } from "@lib/schemas";
-import { codetoError } from "@lib/utils";
+import { isUsernameAvailable } from "@lib/shared/helpers/internal_fetchers";
+import { useCustomReducer } from "@lib/frontend/hooks";
+import { usernameSchema } from "@lib/shared/validation/schemas";
+import { codetoError } from "@lib/shared/utils";
 import { useRef } from "react";
 import z from "zod";
 

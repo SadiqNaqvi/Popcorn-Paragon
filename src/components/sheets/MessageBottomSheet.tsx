@@ -1,9 +1,9 @@
 import BottomSheet, { BottomSheetRef } from "@components/BottomSheet";
 import { MetadataTile, MetadataTileContainer, OptionalChildren } from "@components/ui";
 import OptionList from "@components/ui/OptionList";
-import { app_production_url } from "@lib/constants";
-import { filterDocsInInfiniteQueryResult, retryMessage, unsendMessage } from "@lib/helpers/mutations";
-import { getQueryKeys } from "@lib/utils";
+import { app_production_url } from "@lib/shared/constants";
+import { filterDocsInInfiniteQueryResult, retryMessage, unsendMessage } from "@lib/frontend/helpers/mutations";
+import { getQueryKeys } from "@lib/shared/utils";
 import useGlobalStore from "@store/globalStore";
 import useCurrentUser from "@store/user";
 import { GenericDate, MereMessage, MessageReplyType } from "@type/internal";

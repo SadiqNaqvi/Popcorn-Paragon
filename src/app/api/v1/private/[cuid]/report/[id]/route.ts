@@ -1,8 +1,8 @@
-import { getHandler, postHandler, updateHandler } from "@lib/helpers/handlers";
-import { sendAppNotification, sendNotification, sendPushNotification } from "@lib/helpers/server";
-import { getAblyRest } from "@lib/providers/ably";
-import { reportActionSchema } from "@lib/schemas";
-import { capitalize } from "@lib/utils";
+import { sendAppNotification, sendPushNotification } from "@lib/backend/actions/notification";
+import { getHandler, postHandler, updateHandler } from "@lib/backend/helpers/handlers";
+import { getAblyRest } from "@lib/backend/providers/ably";
+import { capitalize } from "@lib/shared/utils";
+import { reportActionSchema } from "@lib/shared/validation/schemas";
 import { Comment, Member, Notification, Post } from "@model";
 import Report from "@model/reports";
 import { NotificationModelType } from "@type/models";

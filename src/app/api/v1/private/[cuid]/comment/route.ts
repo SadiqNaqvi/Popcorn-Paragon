@@ -1,9 +1,8 @@
-import { postHandler, PrecheckFunction } from "@lib/helpers/handlers";
-import { sendNotification } from "@lib/helpers/server";
-import { commentSchema } from "@lib/schemas";
-import { createArray } from "@lib/utils";
+import { sendNotification } from "@lib/backend/actions/notification";
+import { postHandler, type PrecheckFunction } from "@lib/backend/helpers/handlers";
+import { createArray } from "@lib/shared/utils";
+import { commentSchema } from "@lib/shared/validation/schemas";
 import { Comment, Connection, Post, Thread, User } from "@model";
-import { CommentModelType, NotificationModelType } from "@type/models";
 import { CommentSchemaType } from "@type/schemas";
 
 // Checking if the author of the post or the author of the replied comment has blocked the current user or not.

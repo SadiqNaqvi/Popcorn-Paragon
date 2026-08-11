@@ -2,8 +2,8 @@
 
 import { Navbar } from "@components";
 import ToggleButtonBar from "@components/ui/ToggleButtonBar";
-import { toggleContentFiltering } from "@lib/helpers/mutations";
-import { useDebounce } from "@lib/hooks";
+import { toggleContentFiltering } from "@lib/frontend/helpers/mutations";
+import { useDebounce } from "@lib/frontend/hooks";
 import { useState } from "react";
 
 const FilterContentTogglePage = ({ status }: { status: boolean }) => {

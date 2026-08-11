@@ -1,9 +1,9 @@
 // Reported Comments in a thread. Should only be seen by managers.
 // Here id is thread_id.
 
-import { getHandler } from "@lib/helpers/handlers";
-import { reportedContentAggregation } from "@lib/pipelines";
-import { getPageParams } from "@lib/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { reportedContentAggregation } from "@lib/backend/helpers/pipelines";
+import { getPageParams } from "@lib/backend/utils";
 import { Member } from "@model";
 import Report from "@model/reports";
 

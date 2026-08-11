@@ -1,4 +1,4 @@
-import { getHandler } from "@lib/helpers/handlers";
+import { getHandler } from "@lib/backend/helpers/handlers";
 import Collaborator from "@model/collaborators";
 
 // Check if a user is collaborator/invitee of the shelf or not

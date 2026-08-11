@@ -1,6 +1,6 @@
-import { deleteHandler, getHandler, postHandler } from "@lib/helpers/handlers";
-import { sendNotification } from "@lib/helpers/server";
-import { isMilestoneReached } from "@lib/utils";
+import { deleteHandler, getHandler, postHandler } from "@lib/backend/helpers/handlers";
+import { sendNotification } from "@lib/backend/actions/notification";
+import { isMilestoneReached } from "@lib/backend/utils";
 import { Post, Reaction, User } from "@model";
 
 // Get the reaction of the current user on a post.

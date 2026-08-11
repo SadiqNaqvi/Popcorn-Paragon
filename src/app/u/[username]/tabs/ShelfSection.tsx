@@ -4,8 +4,8 @@ import { RightChevron } from "@assets/Icons";
 import { InfiniteScroller, Navigate } from "@components";
 import { OptionalChildren, ShelfBar } from "@components/ui";
 import { ShelfBarListSkeleton } from "@components/ui/loading";
-import { getShelvesOfUser } from "@lib/helpers/common";
-import { getQueryKeys } from "@lib/utils";
+import { getShelvesOfUser } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys } from "@lib/shared/utils";
 import { RequestedUser } from "@type/internal";
 import { PredefinedShelves } from "@type/models";
 

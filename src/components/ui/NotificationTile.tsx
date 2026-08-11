@@ -1,6 +1,6 @@
 import Navigate from "@components/Navigate";
-import { acceptCollaboratorInvitation, acceptManagerInvitation, rejectCollaboratorInvitation } from "@lib/helpers/mutations";
-import { timeAgo } from "@lib/utils";
+import { acceptCollaboratorInvitation, acceptManagerInvitation, rejectCollaboratorInvitation } from "@lib/frontend/helpers/mutations";
+import { timeAgo } from "@lib/shared/utils";
 import { NotificationModelType } from "@type/models";
 import ParloImage from "./ParloImage/ParloImage";
 import OptionalChildren from "./OptionalChildren";

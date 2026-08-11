@@ -1,5 +1,5 @@
-import { HandlerParamVariable } from "@lib/helpers/handlers";
-import { getRedis } from "@lib/providers/redis";
+import { HandlerParamVariable } from "@lib/backend/helpers/handlers";
+import { getRedis } from "@lib/backend/providers/redis";
 import { NextRequest, NextResponse } from "next/server";
 
 export const POST = async (req: NextRequest, { params }: { params: Promise<HandlerParamVariable> }) => {

@@ -3,7 +3,7 @@
 import { AddIcon, XmarkIcon } from "@assets/Icons";
 import { BottomSheet, BottomSheetRef, ListSelector, ListSelectorRef, RefinedValues } from "@components";
 import { Button, OptionalChildren } from "@components/ui";
-import { searchAllContent } from "@lib/contentFetcher";
+import { searchAllContent } from "@lib/shared/helpers/external_fetchers";
 import { RefinedSearchData } from "@type/external";
 import { InputManagerType } from "@type/other";
 import { ThreadConnection as CType } from "@type/internal";

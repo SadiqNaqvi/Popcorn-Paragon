@@ -1,5 +1,5 @@
-import { updateHandler } from "@lib/helpers/handlers";
-import { hideRoomInCache } from "@lib/helpers/redis/messaging";
+import { updateHandler } from "@lib/backend/helpers/handlers";
+import { hideRoomInCache } from "@lib/backend/redis/messaging";
 import { Participant } from "@model";
 
 // Hiding a room from room list

@@ -2,8 +2,8 @@
 
 import { GenericWrapper, Navbar, Navigate, SaveButton } from "@components";
 import { BreadCrumbs, BreadCrumbTile, MetadataTile, MetadataTileContainer, OptionalChildren, ParloImage, TabContainer, TabList } from "@components/ui";
-import { getCommentById } from "@lib/helpers/common";
-import { getQueryKeys, timeAgo } from "@lib/utils";
+import { getCommentById } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys, timeAgo } from "@lib/shared/utils";
 import { FullComment } from "@type/internal";
 import Image from "next/image";
 import OptionsButton from "./Ellipsis";

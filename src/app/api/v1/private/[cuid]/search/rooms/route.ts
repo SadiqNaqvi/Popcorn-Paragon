@@ -1,7 +1,7 @@
-import { queryLimit } from "@lib/constants";
-import { getHandler } from "@lib/helpers/handlers";
-import { convertMatchToLookupExpr, createPipeline, getSearchPipelineForRooms, getSearchPipelineForUsers, userProjection, usersAggregationPipeline } from "@lib/pipelines";
-import { getSearchParams } from "@lib/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { createPipeline, getSearchPipelineForRooms, getSearchPipelineForUsers } from "@lib/backend/helpers/pipelines";
+import { getSearchParams } from "@lib/backend/utils";
+import { queryLimit } from "@lib/shared/constants";
 import { Room, User } from "@model";
 import { AggregatedResponse } from "@type/internal";
 import type { PipelineStage } from "@type/mongoose";

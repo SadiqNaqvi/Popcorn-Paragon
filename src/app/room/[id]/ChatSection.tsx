@@ -3,9 +3,9 @@
 import { LeftChevron } from "@assets/Icons";
 import { GenericWrapper, Navigate } from "@components";
 import { ParloImage } from "@components/ui";
-import { getRoomById } from "@lib/helpers/common";
-import { useAblyPresence } from "@lib/hooks";
-import { getQueryKeys } from "@lib/utils";
+import { getRoomById } from "@lib/shared/helpers/internal_fetchers";
+import { useAblyPresence } from "@lib/frontend/hooks";
+import { getQueryKeys } from "@lib/shared/utils";
 import useOfflineStore from "@store/offlineStore";
 import { FullRoomType, RoomEnumType } from "@type/internal";
 import ChatInfoSection from "./ChatInfoSection";

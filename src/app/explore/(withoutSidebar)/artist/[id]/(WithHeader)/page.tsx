@@ -1,7 +1,7 @@
 import { TaleonGrid } from "@app/explore/(withoutSidebar)/components";
 import JsonLd from "@components/JsonLd";
-import { fetchPerson } from "@lib/contentFetcher";
-import { generateJsonLdForArtist } from "@lib/seo/jsonld";
+import { fetchPerson } from "@lib/shared/helpers/external_fetchers";
+import { generateJsonLdForArtist } from "@lib/shared/seo/jsonld";
 import { ParloPageProps } from "@type/other";
 
 const fetchData = async (params: { id: string }) => {

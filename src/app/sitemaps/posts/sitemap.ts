@@ -1,5 +1,5 @@
-import { app_production_url } from "@lib/constants";
-import { connectDatabase } from "@lib/database";
+import { app_production_url } from "@lib/shared/constants";
+import { connectDatabase } from "@lib/backend/providers/database";
 import { Post } from "@model";
 import { GenericDate } from "@type/internal";
 import { PostModelType } from "@type/models";

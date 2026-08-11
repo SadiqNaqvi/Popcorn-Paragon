@@ -1,6 +1,6 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { postsAggregationPipeline } from "@lib/pipelines";
-import { getPageParams } from "@lib/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { postsAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { getPageParams } from "@lib/backend/utils";
 import { Post } from "@model";
 
 export const GET = getHandler(async (r) => {

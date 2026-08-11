@@ -3,9 +3,9 @@
 import { CollaborateIcon, RightChevron } from "@assets/Icons";
 import { BottomSheet, ListSelector, ListSelectorRef } from "@components";
 import { ShelfSelector } from "@components/form";
-import { getShelvesAsCollaborator } from "@lib/helpers/common";
-import { updateShelvesWithItem } from "@lib/helpers/mutations";
-import { getQueryKeys } from "@lib/utils";
+import { getShelvesAsCollaborator } from "@lib/shared/helpers/internal_fetchers";
+import { updateShelvesWithItem } from "@lib/frontend/helpers/mutations";
+import { getQueryKeys } from "@lib/shared/utils";
 import { MereShelf } from "@type/internal";
 import { PredefinedShelves } from "@type/models";
 import { useRef } from "react";

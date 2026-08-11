@@ -1,4 +1,4 @@
-import { getHandler } from "@lib/helpers/handlers";
+import { getHandler } from "@lib/backend/helpers/handlers";
 import { ShelfItem } from "@model";
 
 // Getting the list of created shelves which hava a specific taleon, id = taleon_id

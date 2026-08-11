@@ -2,8 +2,8 @@
 
 import { InfiniteScroller, Navbar } from "@components";
 import RoomBar from "@components/ui/RoomBar";
-import { getInvitedRooms } from "@lib/helpers/common";
-import { getQueryKeys } from "@lib/utils";
+import { getInvitedRooms } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys } from "@lib/shared/utils";
 
 const NotFoundSection = () => (
     <section className="h-size-screen flex flex-cntr-all pt-8">

@@ -1,8 +1,8 @@
 "use client";
 
 import { BellIcon } from "@assets/Icons";
-import { getQueryClient } from "@lib/providers/queryClient";
-import { getQueryKeys } from "@lib/utils";
+import { getQueryClient } from "@lib/backend/providers/queryClient";
+import { getQueryKeys } from "@lib/shared/utils";
 import useNotification from "@store/notification";
 import useCurrentUser from "@store/user";
 import { InfiniteScrollerDataType } from "@type/other";

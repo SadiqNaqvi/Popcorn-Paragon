@@ -1,13 +1,13 @@
 import { Navigate } from "@components";
 import { NotFound } from "@components/fallbacks";
-import { fetchCollection } from "@lib/contentFetcher";
-import generateDynamicMetadata from "@lib/seo/metadata";
-import { getPoster } from "@lib/utils";
+import { fetchCollection } from "@lib/shared/helpers/external_fetchers";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
+import { getPoster } from "@lib/shared/utils";
 import { ParloPageProps } from "@type/other";
 import { Metadata } from "next";
 import { TaleonGrid, TaleonWikiHeader, TaleonWikiSection } from "../../components";
 import JsonLd from "@components/JsonLd";
-import { generateJsonLdForCollection } from "@lib/seo/jsonld";
+import { generateJsonLdForCollection } from "@lib/shared/seo/jsonld";
 
 const fetchData = async (params: { id: string }) => {
     const collection_id = params.id.split('-')[0];

@@ -1,7 +1,7 @@
 import { Navbar } from "@components";
 import { BlogHeading1, BlogHeading2, BlogHeading3, BlogList, BlogSection, BlogSubSection } from "@components/blog";
 import { ParloFooter } from "@components/ui";
-import generateDynamicMetadata from '@lib/seo/metadata';
+import generateDynamicMetadata from '@lib/shared/seo/metadata';
 import type { Metadata } from 'next';
 
 export const dynamic = "force-static";

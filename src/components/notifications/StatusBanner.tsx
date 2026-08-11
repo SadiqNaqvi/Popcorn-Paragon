@@ -1,7 +1,7 @@
 "use client";
 
 import Navigate from "@components/Navigate";
-import { getPushSubscription } from "@lib/providers/push";
+import { getPushSubscription } from "@lib/frontend/helpers/push";
 import useCurrentUser from "@store/user";
 import { useEffect, useState } from "react";
 

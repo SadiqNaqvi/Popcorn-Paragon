@@ -2,8 +2,8 @@
 import { InfiniteScroller, Navbar } from "@components";
 import { CommentBar, PostBar } from "@components/ui";
 import ShelfBar from "@components/ui/ShelfBar";
-import { getSavedContent } from "@lib/helpers/common";
-import { getQueryKeys } from "@lib/utils";
+import { getSavedContent } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys } from "@lib/shared/utils";
 
 const SavedSection = ({ type, uid }: { type: "post" | "comment" | "shelf", uid: string }) => {
 

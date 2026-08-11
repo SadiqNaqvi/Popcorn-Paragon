@@ -1,5 +1,5 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { reportAggregationPipeline } from "@lib/pipelines";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { reportAggregationPipeline } from "@lib/backend/helpers/pipelines";
 import { Member } from "@model";
 import Report from "@model/reports";
 import { ReportedContentEnum } from "@type/internal";

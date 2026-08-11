@@ -1,6 +1,6 @@
-import { deleteHandler, updateHandler } from "@lib/helpers/handlers";;
-import { deleteComments } from "@lib/helpers/deletion";
-import { commentSchemaUpdate } from "@lib/schemas";
+import { deleteHandler, updateHandler } from "@lib/backend/helpers/handlers";;
+import { deleteComments } from "@lib/backend/helpers/deletion";
+import { commentSchemaUpdate } from "@lib/shared/validation/schemas";
 import { Comment, Post, Thread, User } from "@model";
 import { CommentSchemaUpdateType } from "@type/schemas";
 

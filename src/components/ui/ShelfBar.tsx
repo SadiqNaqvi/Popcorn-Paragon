@@ -1,6 +1,6 @@
 import { EyesIcon } from "@assets/Icons";
 import { Navigate } from "@components";
-import { numberConverter, timeAgo } from "@lib/utils";
+import { numberConverter, timeAgo } from "@lib/shared/utils";
 import { MereShelf } from "@type/internal";
 import { MetadataTile, MetadataTileContainer, ShelfPoster } from "./";
 

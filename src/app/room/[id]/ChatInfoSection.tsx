@@ -4,8 +4,8 @@ import { BellIcon, BellSlashIcon, EyeSlashIcon, LeaveIcon, RightChevron, UserIco
 import { BottomSheet, Navigate, NestedSheet } from "@components";
 import { WarningSheet } from "@components/sheets";
 import { Button, OptionalChildren, ParloImage } from "@components/ui";
-import { hideRoom, leaveRoom, updateNotificationOfRoom } from "@lib/helpers/mutations";
-import { useDebounce } from "@lib/hooks";
+import { hideRoom, leaveRoom, updateNotificationOfRoom } from "@lib/frontend/helpers/mutations";
+import { useDebounce } from "@lib/frontend/hooks";
 import { FullRoomType } from "@type/internal";
 import { useRouter } from "next/navigation";
 import { PropsWithChildren, useState } from "react";

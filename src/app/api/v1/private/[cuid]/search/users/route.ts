@@ -1,5 +1,5 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { convertMatchToLookupExpr, searchHandler } from "@lib/pipelines";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { convertMatchToLookupExpr, searchHandler } from "@lib/backend/helpers/pipelines";
 
 // Search non-blocked users
 export const GET = getHandler(async (r, params) => {

@@ -2,7 +2,7 @@ import { Ellipsis } from "@assets/Icons";
 import { OptionMenu } from "@components";
 import { WarningSheet } from "@components/sheets";
 import OptionList, { NestedSheetTrigger } from "@components/ui/OptionList";
-import { blockUserMutation, deleteShelfMutation, updateShelfKeyMutation } from "@lib/helpers/mutations";
+import { blockUserMutation, deleteShelfMutation, updateShelfKeyMutation } from "@lib/frontend/helpers/mutations";
 import useCurrentUser from "@store/user";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";

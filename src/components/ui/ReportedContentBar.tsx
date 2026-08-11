@@ -3,7 +3,7 @@ import { PropsWithChildren } from "react";
 import { CommentBarForReport } from "./CommentBar";
 import OptionalChildren from "./OptionalChildren";
 import { PostBarForReportList } from "./PostBar";
-import { allReasonsToReport } from "@lib/constants";
+import { allReasonsToReport } from "@lib/shared/constants";
 import { UidsForReportReason } from "@type/other";
 
 const ReasonTiles = ({ reasons, total }: Pick<ReportedContent, "reasons" | "total">) => {

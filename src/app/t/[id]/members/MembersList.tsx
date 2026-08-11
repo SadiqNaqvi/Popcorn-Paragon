@@ -3,8 +3,8 @@
 import { Navbar, SearchInList } from "@components";
 import { FullPageUserBarSkeleton } from "@components/ui/loading";
 import UserBar from "@components/ui/UserBar";
-import { getMembers, searchMembers } from "@lib/helpers/common";
-import { getQueryKeys } from "@lib/utils";
+import { getMembers, searchMembers } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys } from "@lib/shared/utils";
 
 const notFoundMessage = {
     title: "Oops! Looks like you entered an vacant thread.",

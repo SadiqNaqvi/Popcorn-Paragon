@@ -1,9 +1,9 @@
-import { shelfCollaboratorsLimit } from "@lib/constants";
-import { getHandler, postHandler, PrecheckFunction, updateHandler } from "@lib/helpers/handlers";
-import { sendNotification } from "@lib/helpers/server";
-import { convertMatchToLookupExpr } from "@lib/pipelines";
-import { createArrayOfUidsSchema } from "@lib/schemas";
-import { getPoster } from "@lib/utils";
+import { shelfCollaboratorsLimit } from "@lib/shared/constants";
+import { getHandler, postHandler, PrecheckFunction, updateHandler } from "@lib/backend/helpers/handlers";
+import { sendNotification } from "@lib/backend/actions/notification";
+import { convertMatchToLookupExpr } from "@lib/backend/helpers/pipelines";
+import { createArrayOfUidsSchema } from "@lib/shared/validation/schemas";
+import { getPoster } from "@lib/shared/utils";
 import { Connection, Notification, Shelf } from "@model";
 import Collaborator from "@model/collaborators";
 

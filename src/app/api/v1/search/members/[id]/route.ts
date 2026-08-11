@@ -1,6 +1,6 @@
-import { getUserFromToken } from "@lib/auth/utils";
-import { getHandler } from "@lib/helpers/handlers";
-import { convertMatchToLookupExpr, searchHandler } from "@lib/pipelines";
+import { getUserFromToken } from "@lib/backend/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { convertMatchToLookupExpr, searchHandler } from "@lib/backend/helpers/pipelines";
 import { cookies } from "next/headers";
 
 // Search Members of a thread with thread_id (id)

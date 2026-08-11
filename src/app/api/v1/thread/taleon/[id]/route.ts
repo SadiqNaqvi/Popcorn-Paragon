@@ -1,7 +1,7 @@
-import { filterToSort } from "@lib/constants";
-import { getHandler } from "@lib/helpers/handlers";
-import { attachNsfwInPipeline, threadsAggregationPipeline } from "@lib/pipelines";
-import { getSearchParams } from "@lib/utils";
+import { filterToSort } from "@lib/shared/constants";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { attachNsfwInPipeline, threadsAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { getSearchParams } from "@lib/backend/utils";
 import { Thread } from "@model";
 
 // Get the threads based upon the taleon, here id = taleon id
@@ -20,6 +20,5 @@ export const GET = getHandler(async (r, { id }) => {
 
   const threads = result[0];
 
-  // if (!threads) return { success: false, errCode: "resource_not_found" };
   return { result: threads, success: true };
 });

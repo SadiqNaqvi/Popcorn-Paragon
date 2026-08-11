@@ -1,5 +1,5 @@
 import TaleonThreadPage from "@app/explore/(withoutSidebar)/components/TaleonThreadPage";
-import { fetchShow } from "@lib/contentFetcher";
+import { fetchShow } from "@lib/shared/helpers/external_fetchers";
 import { ParloPageProps } from "@type/other";
 import { Metadata } from "next";
 

@@ -1,7 +1,7 @@
-import { deleteHandler, getHandler, postHandler, PrecheckFunction } from "@lib/helpers/handlers";
-import { sendNotification } from "@lib/helpers/server";
-import { likeSchema } from "@lib/schemas";
-import { isMilestoneReached } from "@lib/utils";
+import { deleteHandler, getHandler, postHandler, PrecheckFunction } from "@lib/backend/helpers/handlers";
+import { sendNotification } from "@lib/backend/actions/notification";
+import { likeSchema } from "@lib/shared/validation/schemas";
+import { isMilestoneReached } from "@lib/backend/utils";
 import { Comment, Connection, Like, User } from "@model";
 import { LikeSchemaType } from "@type/schemas";
 

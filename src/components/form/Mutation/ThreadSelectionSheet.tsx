@@ -2,8 +2,8 @@
 
 import { BottomSheet, BottomSheetRef, GeneralTile, InfiniteScroller, NestedSheet } from "@components";
 import { OptionalChildren, ParloImage } from "@components/ui";
-import { joinedThreadsOfUser } from "@lib/helpers/common";
-import { getQueryKeys } from "@lib/utils";
+import { joinedThreadsOfUser } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys } from "@lib/shared/utils";
 import useOfflineStore from "@store/offlineStore";
 import useCurrentUser from "@store/user";
 import { InfiniteQueryResponse, MereThread } from "@type/internal";

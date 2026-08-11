@@ -4,9 +4,9 @@ import CommentInput from "@components/CommentInput";
 import InfiniteScroller from "@components/InfiniteScroller";
 import { CommentBar, LoadingSpinner } from "@components/ui";
 import { CommentSectionSkeleton } from "@components/ui/loading/CommentSkeleton";
-import { getCommentsOnPost, getPostById } from "@lib/helpers/common";
-import { useQueryHook } from "@lib/hooks";
-import { getQueryKeys } from "@lib/utils";
+import { getCommentsOnPost, getPostById } from "@lib/shared/helpers/internal_fetchers";
+import { useQueryHook } from "@lib/frontend/hooks";
+import { getQueryKeys } from "@lib/shared/utils";
 import { FullPost } from "@type/internal";
 
 type Props = {

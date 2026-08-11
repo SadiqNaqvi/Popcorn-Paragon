@@ -1,6 +1,6 @@
 "use client";
 
-import { useInfiniteQueryHook } from "@lib/hooks";
+import { useInfiniteQueryHook } from "@lib/frontend/hooks";
 import useCurrentUser from "@store/user";
 import { InfiniteData } from "@tanstack/react-query";
 import { PaginatedData } from "@type/external";

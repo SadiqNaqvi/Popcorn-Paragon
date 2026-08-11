@@ -1,7 +1,7 @@
-import { getSession } from "@lib/auth/session";
-import { generateToken, verifyToken } from "@lib/auth/token";
-import { deleteAuthCookies, setCookies } from "@lib/auth/cookies";
-import { slidingWindowRateLimit } from "@lib/helpers/redis/rate_limiting";
+import { getSession } from "@lib/backend/auth/session";
+import { generateToken, verifyToken } from "@lib/backend/auth/token";
+import { deleteAuthCookies, setCookies } from "@lib/backend/auth/cookies";
+import { slidingWindowRateLimit } from "@lib/backend/redis/rate_limiting";
 import { ErrorCodes } from "@type/other";
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";

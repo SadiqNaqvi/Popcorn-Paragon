@@ -1,9 +1,9 @@
 import LoginModal from "@components/fallbacks/LoginModal";
 import { LoadingSpinner } from "@components/ui";
-import { getUserFromToken } from "@lib/auth/utils";
-import { getInvitedRooms, getInvitedRoomsCount, getRooms } from "@lib/helpers/common";
-import { getQueryClient, prefetchInfiniteQuery, prefetchQuery } from "@lib/providers/queryClient";
-import { getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { getInvitedRooms, getInvitedRoomsCount, getRooms } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryClient, prefetchInfiniteQuery, prefetchQuery } from "@lib/backend/providers/queryClient";
+import { getQueryKeys } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { cookies } from "next/headers";
 import { PropsWithChildren, Suspense } from "react";

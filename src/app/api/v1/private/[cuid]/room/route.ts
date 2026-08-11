@@ -1,7 +1,7 @@
-import { getHandler } from "@lib/helpers/handlers";
-import { getRoomListFromCache, storeRoomList } from "@lib/helpers/redis/messaging";
-import { roomAggregationPipeline } from "@lib/pipelines";
-import { getPageParams } from "@lib/utils";
+import { getHandler } from "@lib/backend/helpers/handlers";
+import { getRoomListFromCache, storeRoomList } from "@lib/backend/redis/messaging";
+import { roomAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { getPageParams } from "@lib/backend/utils";
 import Participant from "@model/participants";
 import { RoomListResponse } from "@type/internal";
 

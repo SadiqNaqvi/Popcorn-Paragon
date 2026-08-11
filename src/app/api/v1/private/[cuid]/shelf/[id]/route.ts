@@ -1,7 +1,7 @@
-import { deleteShelfs } from "@lib/helpers/deletion";
-import { deleteHandler, getHandler, postHandler, updateHandler } from "@lib/helpers/handlers";
-import { addItemsInShelf } from "@lib/helpers/server";
-import { itemsForShelfSchema, shelfEditSchema } from "@lib/schemas";
+import { deleteShelfs } from "@lib/backend/helpers/deletion";
+import { deleteHandler, getHandler, postHandler, updateHandler } from "@lib/backend/helpers/handlers";
+import { addItemsInShelf } from "@lib/backend/utils";
+import { itemsForShelfSchema, shelfEditSchema } from "@lib/shared/validation/schemas";
 import { Shelf, ShelfItem, Collaborators, User } from "@model";
 import { FullShelf } from "@type/internal";
 import { ItemsForShelfSchemaType, ShelfEditSchemaType } from "@type/schemas";

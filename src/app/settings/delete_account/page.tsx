@@ -3,8 +3,8 @@
 import { Navbar, Navigate } from "@components";
 import { BlogHeading1, BlogHeading2, BlogSection, BlogSubSection } from "@components/blog";
 import { FullPageLoadingSpinner } from "@components/ui/loading/LoadingSpinner";
-import { deleteAccount } from "@lib/helpers/mutations";
-import { numberConverter } from "@lib/utils";
+import { deleteAccount } from "@lib/frontend/helpers/mutations";
+import { numberConverter } from "@lib/shared/utils";
 import useCurrentUser from "@store/user";
 import { useRef, useState } from "react";
 import FinalSection from "./FinalSection";

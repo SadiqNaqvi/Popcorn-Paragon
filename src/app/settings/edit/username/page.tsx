@@ -3,9 +3,9 @@
 import { Navbar } from "@components";
 import { Form, Input, Passkey } from "@components/form";
 import { Button, LoadingSpinner } from "@components/ui";
-import { updateUsername } from "@lib/helpers/mutations";
-import { usernameUpdateSchema } from "@lib/schemas";
-import { getTimeInFuture } from "@lib/utils";
+import { updateUsername } from "@lib/frontend/helpers/mutations";
+import { usernameUpdateSchema } from "@lib/shared/validation/schemas";
+import { getTimeInFuture } from "@lib/shared/utils";
 import useCurrentUser from "@store/user";
 import { useRouter } from "next/navigation";
 

@@ -1,10 +1,10 @@
-import { participantsLimitForGroup, participantsRemoveOrInviteLimit } from "@lib/constants";
-import { deleteRooms } from "@lib/helpers/deletion";
-import { deleteHandler, getHandler, updateHandler } from "@lib/helpers/handlers";
-import { checkIfParticipantExists, getParticipantsFromCache, getParticipantsOfRoom, removeRoomFromInvitation, removeRoomFromList, updateParticipantSeenAt } from "@lib/helpers/redis/messaging";
-import { usersAggregationPipeline } from "@lib/pipelines";
-import { publishAblyEvent } from "@lib/providers/ably";
-import { getPageParams } from "@lib/utils";
+import { participantsLimitForGroup, participantsRemoveOrInviteLimit } from "@lib/shared/constants";
+import { deleteRooms } from "@lib/backend/helpers/deletion";
+import { deleteHandler, getHandler, updateHandler } from "@lib/backend/helpers/handlers";
+import { checkIfParticipantExists, getParticipantsFromCache, getParticipantsOfRoom, removeRoomFromInvitation, removeRoomFromList, updateParticipantSeenAt } from "@lib/backend/redis/messaging";
+import { usersAggregationPipeline } from "@lib/backend/helpers/pipelines";
+import { publishAblyEvent } from "@lib/backend/providers/ably";
+import { getPageParams } from "@lib/backend/utils";
 import { Room, User } from "@model";
 import Participant from "@model/participants";
 

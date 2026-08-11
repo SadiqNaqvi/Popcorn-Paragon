@@ -1,10 +1,10 @@
 import { CreateEditPost } from "@components";
 import LoginModal from "@components/fallbacks/LoginModal";
 import { NotFound, ShowError } from "@components/fallbacks";
-import { getUserFromToken } from "@lib/auth/utils";
-import { getPostById } from "@lib/helpers/common";
-import { fetchQuery, getQueryClient } from "@lib/providers/queryClient";
-import { getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { getPostById } from "@lib/shared/helpers/internal_fetchers";
+import { fetchQuery, getQueryClient } from "@lib/backend/providers/queryClient";
+import { getQueryKeys } from "@lib/shared/utils";
 import { ParloPageProps } from "@type/other";
 import { cookies } from "next/headers";
 

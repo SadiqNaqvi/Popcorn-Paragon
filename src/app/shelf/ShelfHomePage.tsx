@@ -4,8 +4,8 @@ import { InfiniteScroller } from "@components";
 import { ShelfNavbar } from "@components/TopNavbar";
 import { ShelfBar } from "@components/ui";
 import { ShelfBarListSkeleton } from "@components/ui/loading";
-import { getPopularShelves } from "@lib/helpers/common";
-import { getQueryKeys } from "@lib/utils";
+import { getPopularShelves } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys } from "@lib/shared/utils";
 
 const ShelfHomePage = () => {
 

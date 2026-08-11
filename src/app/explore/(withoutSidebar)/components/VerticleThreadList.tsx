@@ -2,7 +2,7 @@
 
 import { FilterTiles, InfiniteScroller } from "@components";
 import { ThreadTile } from "@components/ui";
-import { getThreadsForTaleonOrArtist } from "@lib/helpers/common";
+import { getThreadsForTaleonOrArtist } from "@lib/shared/helpers/internal_fetchers";
 import useCurrentUser from "@store/user";
 
 const VerticleThreadList = ({ id, filter, page }: { id: string, filter: string, page: number }) => {

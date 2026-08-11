@@ -7,9 +7,9 @@ import { Form, MediaInputManager, PostCategoryPicker, ToggleButton } from "@comp
 import ChooseThreadButton from "@components/form/Mutation/ThreadSelectionSheet";
 import { Button, OptionalChildren, OptionList } from "@components/ui";
 import PostPageMockup from "@components/ui/mockup/PostPageMockup";
-import { createPostMutation, updatePostMutation } from "@lib/helpers/mutations";
-import { postClientSchema } from "@lib/schemas";
-import { checkEditedFields, readyFrames } from "@lib/utils";
+import { createPostMutation, updatePostMutation } from "@lib/frontend/helpers/mutations";
+import { postClientSchema } from "@lib/shared/validation/schemas";
+import { checkEditedFields, readyFrames } from "@lib/frontend/utils";
 import useCurrentUser from "@store/user";
 import { FullPost, Thread } from "@type/internal";
 import { InputManagerType } from "@type/other";

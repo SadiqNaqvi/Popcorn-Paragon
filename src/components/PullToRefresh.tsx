@@ -1,6 +1,6 @@
 "use client";
 
-import { getQueryClient } from '@lib/providers/queryClient';
+import { getQueryClient } from '@lib/backend/providers/queryClient';
 import React, { useEffect, useRef, useState } from 'react';
 
 type PullToRefreshProps = {

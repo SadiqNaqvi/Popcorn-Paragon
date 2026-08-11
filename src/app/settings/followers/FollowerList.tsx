@@ -2,8 +2,8 @@
 
 import { Navbar, SearchInList } from "@components";
 import { UserBar } from "@components/ui";
-import { getFollowers, searchFollowers } from "@lib/helpers/common";
-import { getQueryKeys } from "@lib/utils";
+import { getFollowers, searchFollowers } from "@lib/shared/helpers/internal_fetchers";
+import { getQueryKeys } from "@lib/shared/utils";
 import useCurrentUser from "@store/user";
 
 const FollowerList = () => {

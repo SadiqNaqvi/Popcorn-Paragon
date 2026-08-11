@@ -1,9 +1,9 @@
 import AccountDeleted from "@components/EmailTemplates/accountDeleted";
 import AccountDeletionWarning from "@components/EmailTemplates/accountDeletion";
-import { oneDayInMiliSeconds, parloculaAppURL } from "@lib/constants";
-import { connectDatabase } from "@lib/database";
-import { deleteUser } from "@lib/helpers/deletion";
-import { sendEmail } from "@lib/helpers/server";
+import { oneDayInMiliSeconds, parloculaAppURL } from "@lib/shared/constants";
+import { connectDatabase } from "@lib/backend/providers/database";
+import { deleteUser } from "@lib/backend/helpers/deletion";
+import { sendEmail } from "@lib/backend/actions/email";
 import { User } from "@model";
 import { render } from "@react-email/components";
 import { GenericDate } from "@type/internal";

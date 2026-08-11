@@ -1,4 +1,4 @@
-import generateDynamicMetadata from "@lib/seo/metadata";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
 
 export const metadata = generateDynamicMetadata({ title: "Threads" });
 

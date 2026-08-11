@@ -1,17 +1,17 @@
 import { PullToRefresh, Sidebar } from "@components";
 import { OptionalChildren } from "@components/ui";
 import { UserPageSkeleton } from "@components/ui/loading";
-import { getUserFromToken } from "@lib/auth/utils";
-import { checkUserConnection, getRoomByUserId, getUserByUsername } from "@lib/helpers/common";
-import { fetchQuery, getQueryClient, prefetchQuery } from "@lib/providers/queryClient";
-import { getQueryKeys } from "@lib/utils";
+import { getUserFromToken } from "@lib/backend/utils";
+import { checkUserConnection, getRoomByUserId, getUserByUsername } from "@lib/shared/helpers/internal_fetchers";
+import { fetchQuery, getQueryClient, prefetchQuery } from "@lib/backend/providers/queryClient";
+import { getQueryKeys } from "@lib/shared/utils";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { cookies } from "next/headers";
 import { PropsWithChildren, Suspense } from "react";
 import Header from "./Header";
 import JsonLd from "@components/JsonLd";
-import { generateJsonLdForUser } from "@lib/seo/jsonld";
-import generateDynamicMetadata from "@lib/seo/metadata";
+import { generateJsonLdForUser } from "@lib/shared/seo/jsonld";
+import generateDynamicMetadata from "@lib/shared/seo/metadata";
 
 export const generateMetadata = async ({ params }: { params: Promise<{ username: string }> }) => {
 
